@@ -1,0 +1,116 @@
+/*------------------------*/
+/*news*/
+/*------------------------*/
+
+.tag{
+    font-family: just-comic;
+    font-size: calc(3.5vw + 3.5vh);
+    color: #FDE9DF;
+    text-shadow: 2px 2.5px #6F5770;
+}
+
+.tag > img{
+    height: calc(3vw + 3vh);
+    padding-right: 1%;
+}
+
+#news_holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.news_content{
+    margin: 1% auto;
+    padding: 0%;
+    border-radius: 12px;
+    width: calc(25vw + 9vh);
+    color: white;
+    border: 3px solid #131013;
+}
+
+.news_content_title{
+    font-family: garet-book;
+    letter-spacing: 3px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    font-size: calc(1vw + 1vh);
+    padding: 2%;
+    width: 90%;
+}
+
+.news_content_details{
+    font-family: garet-book;
+    word-spacing: normal;
+    text-align: justify;
+    background-color: black;
+    border-radius: 10px;
+    font-size: calc(0.5vw + 1.25vh);
+    margin: 2% auto;
+    padding: 2%;
+    width: 90%;
+    line-height: 110%;
+}
+
+.news_content_when{
+    font-family: helvetica-neue-light;
+    font-size: calc(0.75vw + 1.25vh);
+}
+
+.news_content_head{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding: 3% 0% 1% 4%;
+}
+
+.news_content_source{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.news_content_source_name{
+   padding-left: 3%;
+   font-size: calc(0.5vw + 1vh);
+   font-family: helvetica-neue-medium;
+   color:  black;
+}
+
+.news_content_source_img{
+    width: calc(1.2vw + 1.2vh);
+    border-radius: 50%;
+ }
+
+.news_content_main_img{
+    width: 100%;
+}
+
+.redirect_link{
+    justify-self: end;
+}
+
+.redirect_icon{
+    width: calc(0.8vw + 0.8vh);
+}
+
+.redirect_icon:hover{
+    opacity: 80%;
+}
+
+#next_button {
+    font-family: garet-book;
+    background-color: #6F5770;
+    width: 40%;
+    left: 30%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#next_button:hover{
+    opacity: 80%;
+}

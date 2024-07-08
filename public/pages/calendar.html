@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CATCH2T27</title>
+        <link rel="stylesheet" href="https://catch2t27.com/index.css">
+        <link rel="stylesheet" href="https://catch2t27.com/calendar.css">
+        <script src="https://catch2t27.com/index.js" defer></script>
+        <script src="https://catch2t27.com/load_calendar.js" defer></script>
+        
+    </head>
+    <body onload="  load_week(document.getElementById('week_calendar'), 0);">
+        <div id="navbar" current=3></div>
+
+        <br><br><br><br>
+
+        <div id="week_switch">
+            <img onclick="load_week(document.getElementById('week_calendar'), -1)" onmouseenter="this.src='https://catch2t27.com/images/left_button_hover.png'" onmouseleave="this.src='https://catch2t27.com/images/left_button.png'" class="week_btn" id="week_btn_left" src="https://catch2t27.com/images/left_button.png" alt="">
+              <div id="week_display"></div>
+            <img onclick="load_week(document.getElementById('week_calendar'), 1)" onmouseenter="this.src='https://catch2t27.com/images/right_button_hover.png'" onmouseleave="this.src='https://catch2t27.com/images/right_button.png'" class="week_btn" id="week_btn_right" src="https://catch2t27.com/images/right_button.png" alt="">
+          </div>
+      
+          <div id="main_calendar">
+            <div id="week_calendar">
+              <div id="week_head">
+              </div>
+              <div id="week_body">
+              </div>
+              
+            </div>
+          </div>
+
+          <br><br><br><br>
+          <div id="gcal" class="mid big">Check our Google Calendar<a target="_blank" href="https://calendar.google.com/calendar/u/0?cid=Y2F0Y2gydDI3QGdtYWlsLmNvbQ"> HERE</a></div>
+          <br><br><br><br>
+
+    </body>
+</html>

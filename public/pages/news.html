@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CATCH2T27</title>
+        <link rel="stylesheet" href="https://catch2t27.com/index.css">
+        <link rel="stylesheet" href="https://catch2t27.com/news.css">
+        <script src="https://catch2t27.com/index.js" defer></script>
+        <script src="https://catch2t27.com/load_news.js" defer></script>
+        
+    </head>
+    <body onload="load_batched_news(document.getElementById('news_holder'));">
+        <div id="navbar" current=1></div>
+
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <div id="news_holder"></div>
+        <br><br><br><br>
+
+        <div class="mid f_big" id="next_button" onclick="load_batched_news(document.getElementById('news_holder'));">Load More</div>
+
+        <br><br><br><br>
+
+    </body>
+</html>

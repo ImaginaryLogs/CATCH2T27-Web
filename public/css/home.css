@@ -1,0 +1,76 @@
+body{
+    background-image: linear-gradient(black, rgb(46, 9, 46), black, rgb(44, 7, 44), black, rgb(72, 16, 72), black, rgb(72, 16, 72), black, rgb(72, 16, 72), black, rgb(72, 16, 72));
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    font-family: just-comic;
+    font-size: calc(0.5vh + 2.5vw);
+    color:  white;
+    
+}
+
+
+#main_pic{
+    width: calc(10vh + 30vw);
+    border-radius: 50%;
+}
+
+
+#tagline{
+    color: rgb(229, 192, 223);
+    font-family: garet-book;
+}
+
+
+
+.vismis{
+    color:#FDE9DF;
+    margin: auto;
+    text-align:justify;
+    width: 65%;
+    justify-content: center;
+    font-family: garet-book;
+    font-size: calc(1vh + 1vw);
+    display: flex;
+    vertical-align: middle;
+    align-items:start;
+}
+
+.vismis_img{
+    width: 18%;
+    padding-right: 2%;
+}
+.vismis_tag{
+   font-family: garet-heavy;
+}
+
+.contact_tag{
+    font-family: just-comic;
+}
+
+.contact_container{
+    font-family: garet-book;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_img{
+    width: calc(2vh + 2vw);
+    height: calc(2vh + 2vw);
+    padding-right: 2%;
+}
+
+.contact_row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

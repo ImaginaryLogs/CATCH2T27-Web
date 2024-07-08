@@ -1,0 +1,125 @@
+#week_switch{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: garet-heavy;
+    font-size: calc(1.5vw + 1.5vh);
+    color: #FDE9DF;
+    text-shadow: 2px 3px #6a0765;
+}
+
+.week_btn{
+    padding: 0%;
+    margin: 2%;
+    height: calc(2vw + 2vh);
+}
+
+#main_calendar{
+    left: 2.5%;
+    height: calc(40vh + 20vw);
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+#main_calendar::-webkit-scrollbar {
+    height: 10px;
+    background-color: black;
+}
+
+#main_calendar::-webkit-scrollbar-thumb{
+    background-color: #FDE9DF;
+}
+
+#week_calendar{
+    background-color: black;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#week_head{
+    background-color: #FDE9DF;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    font-family: garet-book;
+    
+}
+
+.head_day{
+    display: inline-block;
+    border:2px solid black;
+    width: calc(15vh + 5vw);
+    height: fit-content;
+}
+
+.head_date{
+    font-family: garet-book;
+    font-size: 90%;
+}
+
+.head_details{
+    width: 90%;
+    background: black;
+    margin: 2% auto;
+    justify-content: center;
+    text-align: center;
+    border-radius:calc(.5vh + .125vw);
+}
+
+#week_body{
+    background-color: #301d29;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height: 100%;
+    vertical-align: top;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#week_body::-webkit-scrollbar {
+    width:1px;
+}
+
+.body_day{
+    display:block;
+    border:2px solid black;
+    width: calc(15vh + 5vw);
+    text-wrap: nowrap;
+}
+
+.composite_happening{
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-family: garet-book;
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    text-wrap:balance;
+}
+
+#composite_happening > p{
+    padding: 2%;
+    color: aliceblue;
+}
+
+.head_today{
+    background-color: #6a0765;
+}
+
+.body_today{
+    background-color: #452f3d;
+}
+
+#gcal{
+    font-family: garet-book;
+    font-size: calc(2vw + 2vh);
+}

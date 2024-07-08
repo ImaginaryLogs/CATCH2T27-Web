@@ -1,0 +1,655 @@
+.about-us,
+.about-us * {
+  box-sizing: border-box;
+}
+.about-us {
+  background: #050505;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 360px;
+  position: relative;
+  overflow: hidden;
+}
+.navbar {
+  background: #ffffff;
+  padding: 8px 36px 9px 36px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+._00-p-home {
+  border-radius: 99px;
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 93px;
+  height: 58px;
+  position: relative;
+}
+.colored-1 {
+  flex-shrink: 0;
+  width: 96px;
+  height: 74px;
+  position: relative;
+  object-fit: cover;
+}
+.important-links {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+._01-p-archives {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.calendar {
+  color: #777777;
+  text-align: center;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-boxes {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}
+._04-p-links {
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.pertinent-links {
+  color: #777777;
+  text-align: center;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-newspaper {
+  flex-shrink: 0;
+  width: 39.13px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}
+._03-p-calendar {
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.icon-calendar {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}
+._05-p-about-us {
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.about-us2 {
+  color: #777777;
+  text-align: center;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-info {
+  flex-shrink: 0;
+  width: 16.5px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}
+.content {
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.hero {
+  background: linear-gradient(
+    245.94deg,
+    rgba(5, 4, 65, 1) 0%,
+    rgba(55, 20, 87, 1) 33.33333432674408%,
+    rgba(114, 54, 113, 1) 66.66666865348816%,
+    rgba(149, 141, 141, 1) 100%
+  );
+  border-style: solid;
+  border-color: #200d32;
+  border-width: 0px 0px 3px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-16 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+.frame-15 {
+  padding: 49px 29px 49px 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  height: 615px;
+  min-width: 400px;
+  position: relative;
+}
+.sparking-curiosity-inspiring-innovation-empowering-students {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.catch-2-t-27 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  position: relative;
+  width: 606px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.batch-student-government-for-ccs-123 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-main-2 {
+  flex: 1;
+  height: 669px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-22 {
+  background: #ffffff;
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 818.05px;
+  position: relative;
+  overflow: hidden;
+}
+.catch-2-t-27-general-assembly-t-1 {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-25 {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.ga-1-main-1 {
+  border-radius: 10px;
+  width: 100%;
+  flex: 1;
+  max-width: 1080px;
+  position: relative;
+  object-fit: cover;
+}
+.about-us3 {
+  background: #d9d9d9;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-24 {
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.who-we-are {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.white-2 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 237.95px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-21 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.computer-batch-2027-catch-2-t-27-is-the-representative-body-of-id-123-undergraduate-students-of-the-college-of-computer-studies {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
+  font-size: var(--body-font-size, 25px);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-19 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.mission-1 {
+  flex-shrink: 0;
+  width: 125px;
+  height: 125px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-17 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.mission {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.our-mission-is-to-ignite-curiosity-inspire-innovation-and-empower-ccs-123-students-to-excel-in-coding-and-computer-education-fostering-a-passion-for-lifelong-learning-in-the-dynamic-realm-of-technology {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
+  font-size: var(--body-font-size, 25px);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-20 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.vision-1 {
+  flex-shrink: 0;
+  width: 125px;
+  height: 125px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-18 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.vision {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.our-envisions-a-batch-that-constantly-innovates-through-their-curiosity-and-passion-for-computer-education {
+  color: #000000;
+  text-align: justified;
+  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
+  font-size: var(--body-font-size, 25px);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.footer {
+  background: #050505;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.footer-content {
+  padding: 30px 20px 32px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.links {
+  padding: 5px 30px 5px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.inquire-us-send-suggestions {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
+  font-size: var(--body-font-size, 25px);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.links2 {
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.facebook-link {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.f-initial-letter-for-logo-company-isolated-vector-1 {
+  opacity: 0.8;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  object-fit: cover;
+}
+.facebook {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  opacity: 0.8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.gmail-link {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.gmail-logo-white-512-px-1 {
+  opacity: 0.8;
+  flex-shrink: 0;
+  width: 25px;
+  height: 18.23px;
+  position: relative;
+  object-fit: cover;
+}
+.gmail {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  opacity: 0.8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.github-link {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-git-hub {
+  flex-shrink: 0;
+  width: 25px;
+  height: 24.29px;
+  position: relative;
+  overflow: visible;
+}
+.git-hub {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  opacity: 0.8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.white-1 {
+  flex-shrink: 0;
+  width: 167.86px;
+  height: 150px;
+  position: relative;
+  object-fit: cover;
+}
+.developed-by-the-web-development-team-of-catch-2-t-27 {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--small-font-family, "EbGaramond-Regular", sans-serif);
+  font-size: var(--small-font-size, 10.5px);
+  font-weight: var(--small-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
