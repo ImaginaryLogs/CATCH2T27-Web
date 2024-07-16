@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+}
+.sticky {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+.navbar {
+    background: #ffffff;
+    padding: 8px 36px 9px 36px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+}
+._00-p-home {
+    border-radius: 99px;
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 93px;
+    height: 58px;
+    position: relative;
+}
+.colored-1 {
+  flex-shrink: 0;
+  width: 96px;
+  height: 74px;
+  position: relative;
+  object-fit: cover;
+}
+.important-links {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+._01-p-archives {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.calendar {
+  color: #777777;
+  text-align: center;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-boxes {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}
+._04-p-links {
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.pertinent-links {
+  color: #777777;
+  text-align: center;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-newspaper {
+  flex-shrink: 0;
+  width: 39.13px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}
+._03-p-calendar {
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.icon-calendar {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}
+._05-p-about-us {
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+}
+.about-us2 {
+  color: #777777;
+  text-align: center;
+  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
+  font-size: var(--navbar-title-font-size, 20px);
+  font-weight: var(--navbar-title-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-info {
+  flex-shrink: 0;
+  width: 16.5px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+}

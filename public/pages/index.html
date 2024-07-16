@@ -1,140 +1,208 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CATCH2T27 Home</title>
-    <link rel="stylesheet" href="https://catch2t27.com/index.css">
-    <link rel="stylesheet" href="https://catch2t27.com/home.css">
-    <link rel="stylesheet" href="https://catch2t27.com/news.css">
-    <link rel="stylesheet" href="https://catch2t27.com/calendar.css">
-    <link rel="stylesheet" href="https://catch2t27.com/archives.css">
-    <script src="https://catch2t27.com/load_news.js" defer></script>
-    <script src="https://catch2t27.com/index.js" defer></script>
-    <script src="https://catch2t27.com/load_calendar.js" defer></script>
-  </head>
 
-  <body onload="  load_week(document.getElementById('week_calendar'), 0);
-                  load_batched_news(document.getElementById('news_holder'));"
-         
-  >
-    <div id="navbar" current=0></div>
-
-    
-    <br><br><br><br>
-
-    <div id="main">
-      <div class="tagline" id="tagline1">Sparking Curiosity...</div>
-
-      <img alt="logo" id="main_pic" src="https://catch2t27.com/images/Main-Pic.png">
-
-      <div class="tagline" id="tagline2">...Inspiring Innovation</div>
-    </div>
-    <br>
-    <!--
-    <div class="f_big" id="welcome">CATCH2T27<br><p id="tagline" class="f_vsml">Sparking Curiosity for an<br>inspired and innovative CATCH2T27</p></div> 
-    -->
-    <br><br><br><br><br><br>
-    <br><br><br><br>
-
-    <div class="mid tag">About Us</div>
-    <br><br><br><br>
-      <div class="vismis">
-        <img class="vismis_img" src="https://catch2t27.com/images/mission.png" alt="">
-        <div>
-        <span  class="vismis_tag">Mission: </span><span class="vismis_text">CATCH2T27's mission is to ignite curiosity, inspire innovation, and empower CCS 123 students to excel in coding and computer education, fostering a passion for lifelong learning in the dynamic realm of technology.</span>
-        </div>
-      </div>
-      <br><br><br>
-      <div class="vismis">
-        <img class="vismis_img" src="https://catch2t27.com/images/vision.png" alt="">
-        <div>
-        <span  class="vismis_tag">Vision: </span><span class="vismis_text">CATCH2T27 envisions a batch that constantly innovates through their curiosity and passion for computer education.</span>
-        </div>
-      </div>
-
-
-    <br><br><br><br><br><br>
-
-
-    <!--PINNED (Urgent/Important News/Announcements)-->
-    <h1 id="pinned_tag" class="mid tag"><img src="https://catch2t27.com/images/pinned_icon.png">Pinned</h1>
-    <div class="horizon" id="news_holder"></div>
-    
-
-    <br><br><br><br><br><br>
-    <br><br><br><br><br><br>
-
-
-    <!--ARCHIVES-->
-    <h1 id="archives_tag" class="mid tag"><img src="https://catch2t27.com/images/archives_icon.png">Archives</h1>
-    <div id="GA">
-      <div class="archives_container archives_hoverable" onclick="location.href = 'https://catch2t27.com/archives.html'">
-        <br>
-        <div>CATCH2T27 First General Assembly</div>
-        <br>
-        <img class="archives_thumbnail" src="https://catch2t27.com/images/archives/GA1_main.jpg" alt="">
-        <br>
-        <p>In our very first general assembly, CATCH2T27 got to meet and bond as many of our members met each other for the first time. </p>
-        <br>
-      </div>
-    </div>
-
-
-    <br><br><br><br><br><br>
-    <br><br><br><br><br><br>
-
-
-    <!--CALENDAR-->
-    <h1 id="calendar_tag" class="mid tag"><img src="https://catch2t27.com/images/calendar_icon.png">Calendar</h1>
-
-    <div id="week_switch">
-      <img onclick="load_week(document.getElementById('week_calendar'), -1)" onmouseenter="this.src='https://catch2t27.com/images/left_button_hover.png'" onmouseleave="this.src='https://catch2t27.com/images/left_button.png'" class="week_btn" id="week_btn_left" src="https://catch2t27.com/images/left_button.png" alt="">
-        <div id="week_display"></div>
-      <img onclick="load_week(document.getElementById('week_calendar'), 1)" onmouseenter="this.src='https://catch2t27.com/images/right_button_hover.png'" onmouseleave="this.src='https://catch2t27.com/images/right_button.png'" class="week_btn" id="week_btn_right" src="https://catch2t27.com/images/right_button.png" alt="">
-    </div>
-
-    <div id="main_calendar">
-      <div id="week_calendar">
-        <div id="week_head">
-        </div>
-        <div id="week_body">
-        </div>
-        
-      </div>
-    </div>
-
-    <br><br><br><br><br><br>
-
-
-    <h1 id="contact_tag" class="mid tag">Contact Us</h1>
-    <div class="contact_container">
-    <div class="contact_row"><img class="contact_img" src="https://catch2t27.com/images/mail_logo.png" alt=""> <div>If you have any inquiries or concerns, you may send them to <br><b>catch2t27@gmail.com</b></div></div>
-    <br>
-    <div class="contact_row"><img class="contact_img" src="https://catch2t27.com/images/fb_logo.png" alt=""><div>You may also check our Facebook Page for updates: <br><a href="https://www.facebook.com/CATCH2T27">https://www.facebook.com/CATCH2T27</a></div></div>
-    <br>
-    </div>
-    <!--
-
-    SERVICES
-    <h1 id="services_tag" class="mid tag"><img src="https://catch2t27.com/images/services_icon.png">Services</h1>
-    <p class="mid">. . . coming soon . . .</p>
-    <br><br><br><br><br><br>
-    <br><br><br><br><br><br>
-
-    
-    PERTINENT LINKS
-    <h1 id="pertinent_links_tag" class="mid tag"><img src="https://catch2t27.com/images/pertinent_links_icon.png">Pertinent Links</h1>
-    <p class="mid">. . . coming soon . . .</p>
-    -->
-
-
-  </body>
-
-
-  <script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/vars.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/styles-home.css">
   
+  <script src="../javascript/index.mjs" type="module"></script>
+  <title>Document</title>
+</head>
 
-  </script>
+<body>
 
+  <div class="navbar" id="navbar">
+    <a href="../pages/index.html" class="_00-p-home">
+      <img class="colored-1" src="../images/colored-10.png" alt = ""/>
+    </a>
+    <div class="important-links">
+      <a href="../pages/archives.html" class="link-archives">
+        <div class="archives">Archives</div>
+        <img class="icon-boxes" src="../images/icon-boxes0.svg" alt = ""/>
+      </a>
+      <a href="../pages/pertinent-links.html" class="link-pertinent-links">
+        <div class="pertinent-links">Links</div>
+        <img class="icon-newspaper" src="../images/icon-newspaper0.svg" alt = ""/>
+      </a>
+      <a href="../pages/calendar-page.html"  class="link-calendar">
+        <div class="calendar">Calendar</div>
+        <img class="icon-calendar" src="../images/icon-calendar0.svg" alt = ""/>
+      </a>
+      <a href="../pages/about-us.html"  class="_link-about-us">
+        <div class="about-us">About Us</div>
+        <img class="icon-info" src="../images/icon-info0.svg"  alt = ""/>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="hero">
+      <div class="frame-38">
+        <div class="frame-37">
+          <div class="hero-content">
+            <div class="frame-7">
+              <div
+                class="de-la-salle-university-college-of-computer-studies-id-123-batch-student-government"
+              >
+                De La Salle University
+                <br />
+                College of Computer Studies
+                <br />
+                ID123 Batch Student Government
+              </div>
+              <div class="welcome-to-catch-2-t-27">
+                Welcome to
+                <br />
+                CATCH2T27
+              </div>
+            </div>
+            <div class="hero-details">
+              <div class="check-up-for-phex-and-drug-testing">
+                Check-up for
+                <br />
+                PHEX and Drug-Testing
+              </div>
+              <div
+                class="drug-testing-and-phex-check-up-are-mandatory-for-students"
+              >
+                Drug Testing and PHEX Check-up are
+                <br />
+                mandatory for students.
+              </div>
+              <div class="available-only-up-to-july-27-2024">
+                Available only up to July 27, 2024.
+              </div>
+              <div class="frame-4">
+                <div class="_00-primary-button">
+                  <div class="apply-now">Apply Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="new-knowledge-links">
+      <div class="link-content">
+        <div class="link-content-descriptioon">
+          <div class="community-link-hub">Community Link Hub</div>
+          <div class="organizations-and-other-id-123-s-churn-out-useful-articles-for-you-to-use">
+            Organizations and other ID123s churn out useful articles for you to
+            use
+          </div>
+        </div>
+        <div class="frame-8">
+          <div class="orgs">
+            <div class="organizations">Organizations:</div>
+            <div class="catch-2-t-27">
+              <div class="catch-logo">
+                <img class="colored-2" src="../images/colored-20.png" alt=""/>
+              </div>
+              <div class="catch-2-t-27-links">
+                <div class="catch-2-t-27-links2">CATCH2T27 Links:</div>
+                <div class="your-one-stop-shop-for-every-id-123-s-needs">
+                  Remember to do your PHEX and Drug-testing
+                </div>
+                <div class="important-links2">
+                  <div class="link-archives2">
+                    <div class="calendar">Archives</div>
+                    <img class="icon-boxes2" src="../images/icon-boxes1.svg" alt=""/>
+                  </div>
+                  <div class="_04-p-links2">
+                    <div class="pertinent-links">Links</div>
+                    <img class="icon-newspaper2" src="../images/icon-newspaper1.svg" alt=""/>
+                  </div>
+                  <div class="_03-p-calendar2">
+                    <div class="calendar">Calendar</div>
+                    <img class="icon-calendar2" src="../images/icon-calendar1.svg" alt=""/>
+                  </div>
+                  <div class="_05-p-about-us2">
+                    <div class="about-us">About Us</div>
+                    <img class="icon-info2" src="../images/icon-info1.svg" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest-article">
+      <div class="frame-3">
+        <div class="what-s-up-up-next">What’s Up, Up Next:</div>
+        <div class="july-1-2024-july-31-2024">July 1, 2024 - July 31, 2024</div>
+        <div class="latest-article-content">
+          <img
+            class="_447770209-122118956210288111-8517960029465226187-n-1"
+            src="../images/_447770209-122118956210288111-8517960029465226187-n-10.png"
+            alt=""
+          />
+          <div class="la-content">
+            <div class="drug-testing-and-phex-examination">
+              Drug Testing and PHEX Examination
+            </div>
+            <div
+              class="to-complete-the-periodic-health-examination-ph-ex-health-services-office-hso-shall-facilitate-the-on-site-drug-testing-of-undergraduate-students-with-id-123-and-below-on-28-may-to-july-2023-at-the-taft-campus-it-shall-be-conducted-by-an-accredited-drug-testing-facility-at-the-ground-floor-of-e-yuchengco-hall-taft-campus-monday-to-sunday-from-8-00-am-to-5-00-pm"
+            >
+              To complete the Periodic Health Examination (PHEx), Health
+              Services Office (HSO) shall facilitate the on-site drug testing of
+              undergraduate students with ID123 and Below on 28 May to July 2023
+              at the Taft Campus. It shall be conducted by an accredited drug
+              testing facility at the ground floor of E. Yuchengco Hall, Taft
+              Campus, Monday to Sunday, from 8:00am to 5:00pm
+            </div>
+            <div class="frame-1">
+              <div class="_00-primary-button2">
+                <div class="visit-article">Visit Article</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="links">
+        <div class="inquire-us-send-suggestions">
+          Inquire us, send suggestions!
+        </div>
+        <div class="links2">
+          <div class="facebook-link">
+            <img
+              class="f-initial-letter-for-logo-company-isolated-vector-1"
+              src="../images/f-initial-letter-for-logo-company-isolated-vector-10.png"
+              alt=""
+              />
+            <div class="facebook">Facebook</div>
+          </div>
+          <div class="gmail-link">
+            <img
+              class="gmail-logo-white-512-px-1"
+              src="../images/gmail-logo-white-512-px-10.png"
+              alt=""
+            />
+            <div class="gmail">Gmail</div>
+          </div>
+          <div class="github-link">
+            <img class="icon-git-hub" src="../images/icon-git-hub0.svg" alt=""/>
+            <div class="git-hub">GitHub</div>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <img class="white-1" src="../images/white-10.png" alt=""/>
+        <div class="developed-by-the-web-development-team-of-catch-2-t-27">
+          Developed by the Web-Development
+          <br />
+          Team of CATCH2T27
+        </div>
+      </div>
+    </div>
+  </div>
 
+</body>
 </html>

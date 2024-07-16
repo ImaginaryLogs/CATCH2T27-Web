@@ -1,8 +1,8 @@
-.home,
-.home * {
+.about-us,
+.about-us * {
   box-sizing: border-box;
 }
-.home {
+.about-us {
   background: #050505;
   display: flex;
   flex-direction: column;
@@ -140,7 +140,7 @@
   width: 150px;
   position: relative;
 }
-.about-us {
+.about-us2 {
   color: #777777;
   text-align: center;
   font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
@@ -159,7 +159,7 @@
   overflow: visible;
 }
 .content {
-  background: #ffffff;
+  background: #d9d9d9;
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -168,549 +168,316 @@
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  background: url(hero0.png) top left;
+  background-size: 250%;
+  background-repeat: repeat;
 }
 .hero {
-  background: #200d32;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.frame-38 {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.frame-37 {
-  padding: 100px 10px 100px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 944px;
-  position: relative;
-  overflow: hidden;
-}
-.hero-content {
-  border-style: dashed;
-  border-color: transparent;
-  border-width: 0px 0px 1px 0px;
+  background: linear-gradient(
+    245.94deg,
+    rgba(5, 4, 65, 1) 0%,
+    rgba(55, 20, 87, 1) 33.33333432674408%,
+    rgba(114, 54, 113, 1) 66.66666865348816%,
+    rgba(149, 141, 141, 1) 100%
+  );
+  border-style: solid;
+  border-color: #200d32;
+  border-width: 0px 0px 3px 0px;
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-16 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   flex: 1;
-  min-width: 720px;
+  min-width: 300px;
   position: relative;
-  overflow: hidden;
 }
-.frame-7 {
-  padding: 10px;
+.frame-15 {
+  padding: 49px 29px 49px 29px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-shrink: 0;
+  height: 615px;
+  min-width: 400px;
   position: relative;
 }
-.de-la-salle-university-college-of-computer-studies-id-123-batch-student-government {
-  color: #ffffff;
-  text-align: left;
-  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
-  font-size: var(--body-font-size, 25px);
-  font-weight: var(--body-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.welcome-to-catch-2-t-27 {
+.sparking-curiosity-inspiring-innovation-empowering-students {
   color: #ffffff;
   text-align: left;
   font-family: "Ubuntu-Bold", sans-serif;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 700;
   position: relative;
+  min-width: 300px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-.hero-details {
-  padding: 26px 0px 26px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 443px;
-  position: relative;
-}
-.check-up-for-phex-and-drug-testing {
-  color: #ffffff;
-  text-align: center;
-  font-family: var(--title-font-family, "Ubuntu-Bold", sans-serif);
-  font-size: var(--title-font-size, 40px);
-  font-weight: var(--title-font-weight, 700);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.drug-testing-and-phex-check-up-are-mandatory-for-students {
-  color: #ffffff;
-  text-align: left;
-  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
-  font-size: var(--body-font-size, 25px);
-  font-weight: var(--body-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.available-only-up-to-july-27-2024 {
-  color: #ffffff;
-  text-align: left;
-  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
-  font-size: var(--body-font-size, 25px);
-  font-weight: var(--body-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.frame-4 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-._00-primary-button {
-  background: #25be62;
-  border-radius: 20px;
-  padding: 0px 16px 0px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 220px;
-  height: 75px;
-  position: relative;
-}
-.apply-now {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Ubuntu-Bold", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.new-knowledge-links {
-  background: linear-gradient(to left, #d9d9d9, #d9d9d9);
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.link-content {
-  padding: 20px 0px 20px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.link-content-descriptioon {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.community-link-hub {
-  color: #000000;
-  text-align: left;
-  font-family: var(--title-font-family, "Ubuntu-Bold", sans-serif);
-  font-size: var(--title-font-size, 40px);
-  font-weight: var(--title-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.organizations-and-other-id-123-s-churn-out-useful-articles-for-you-to-use {
-  color: #000000;
-  text-align: center;
-  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
-  font-size: var(--body-font-size, 25px);
-  font-weight: var(--body-font-weight, 400);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.frame-8 {
-  padding: 0px 32px 0px 32px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.orgs {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.organizations {
-  color: #000000;
-  text-align: center;
-  font-family: var(--title-font-family, "Ubuntu-Bold", sans-serif);
-  font-size: var(--title-font-size, 40px);
-  font-weight: var(--title-font-weight, 700);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .catch-2-t-27 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.catch-logo {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 20px 6px 20px 6px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 150px;
-  height: 148px;
-  position: relative;
-  overflow: hidden;
-}
-.colored-2 {
-  flex-shrink: 0;
-  width: 177px;
-  height: 176px;
-  position: relative;
-  object-fit: cover;
-}
-.catch-2-t-27-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.catch-2-t-27-links2 {
-  color: #000000;
-  text-align: center;
-  font-family: var(--title-font-family, "Ubuntu-Bold", sans-serif);
-  font-size: var(--title-font-size, 40px);
-  font-weight: var(--title-font-weight, 700);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.your-one-stop-shop-for-every-id-123-s-needs {
-  color: #000000;
-  text-align: center;
-  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
-  font-size: var(--body-font-size, 25px);
-  font-weight: var(--body-font-weight, 400);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.important-links2 {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 339.5px;
-  position: relative;
-}
-._01-p-archives2 {
-  padding: 0px 20px 0px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.icon-boxes2 {
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  overflow: visible;
-}
-._04-p-links2 {
-  padding: 0px 20px 0px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.icon-newspaper2 {
-  flex-shrink: 0;
-  width: 39.13px;
-  height: 30px;
-  position: relative;
-  overflow: visible;
-}
-._03-p-calendar2 {
-  padding: 0px 20px 0px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
-.icon-calendar2 {
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  overflow: visible;
-}
-._05-p-about-us2 {
-  padding: 0px 20px 0px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.icon-info2 {
-  flex-shrink: 0;
-  width: 16.5px;
-  height: 30px;
-  position: relative;
-  overflow: visible;
-}
-.latest-article {
-  background: #eeeeee;
-  padding: 0px 20px 0px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.frame-3 {
-  padding: 20px 40px 20px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.what-s-up-up-next {
-  color: #000000;
-  text-align: left;
-  font-family: var(--title-font-family, "Ubuntu-Bold", sans-serif);
-  font-size: var(--title-font-size, 40px);
-  font-weight: var(--title-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.july-1-2024-july-31-2024 {
-  color: #000000;
-  text-align: left;
-  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
-  font-size: var(--body-font-size, 25px);
-  font-weight: var(--body-font-weight, 400);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.latest-article-content {
-  padding: 44px 0px 44px 0px;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
-._447770209-122118956210288111-8517960029465226187-n-1 {
-  border-radius: 25px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 2px;
-  flex-shrink: 0;
-  width: 300px;
-  height: 280.07px;
-  position: relative;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  object-fit: cover;
-}
-.la-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  flex: 1;
-  min-width: 360px;
-  position: relative;
-  overflow: hidden;
-}
-.drug-testing-and-phex-examination {
-  color: #000000;
-  text-align: left;
-  font-family: var(--title-font-family, "Ubuntu-Bold", sans-serif);
-  font-size: var(--title-font-size, 40px);
-  font-weight: var(--title-font-weight, 700);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.to-complete-the-periodic-health-examination-ph-ex-health-services-office-hso-shall-facilitate-the-on-site-drug-testing-of-undergraduate-students-with-id-123-and-below-on-28-may-to-july-2023-at-the-taft-campus-it-shall-be-conducted-by-an-accredited-drug-testing-facility-at-the-ground-floor-of-e-yuchengco-hall-taft-campus-monday-to-sunday-from-8-00-am-to-5-00-pm {
-  color: #000000;
-  text-align: left;
-  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
-  font-size: var(--body-font-size, 25px);
-  font-weight: var(--body-font-weight, 400);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.frame-1 {
-  padding: 0px 56px 0px 56px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-._00-primary-button2 {
-  background: #25be62;
-  border-radius: 20px;
-  padding: 0px 16px 0px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 300px;
-  height: 100px;
-  position: relative;
-}
-.visit-article {
   color: #ffffff;
   text-align: left;
   font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  position: relative;
+  width: 606px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.batch-student-government-for-ccs-123 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Ubuntu-Bold", sans-serif;
   font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-main-2 {
+  flex: 1;
+  height: 699px;
+  position: relative;
+  object-fit:fill;
+}
+.frame-22 {
+  background: #ffffff;
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 818.05px;
+  position: relative;
+  overflow: hidden;
+}
+.catch-2-t-27-general-assembly-t-1 {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 20px;
   font-weight: 700;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+.frame-25 {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.ga-1-main-1 {
+  border-radius: 10px;
+  width: 100%;
+  flex: 1;
+  max-width: 1080px;
+  position: relative;
+  object-fit: cover;
+}
+.about-us3 {
+  background: #d9d9d9;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-24 {
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.who-we-are {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.white-2 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 237.95px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-21 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.computer-batch-2027-catch-2-t-27-is-the-representative-body-of-id-123-undergraduate-students-of-the-college-of-computer-studies {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
+  font-size: var(--body-font-size, 25px);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-19 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.mission-1 {
+  flex-shrink: 0;
+  width: 125px;
+  height: 125px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-17 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.mission {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.our-mission-is-to-ignite-curiosity-inspire-innovation-and-empower-ccs-123-students-to-excel-in-coding-and-computer-education-fostering-a-passion-for-lifelong-learning-in-the-dynamic-realm-of-technology {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
+  font-size: var(--body-font-size, 25px);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-20 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.vision-1 {
+  flex-shrink: 0;
+  width: 125px;
+  height: 125px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-18 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.vision {
+  color: #000000;
+  text-align: left;
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.our-envisions-a-batch-that-constantly-innovates-through-their-curiosity-and-passion-for-computer-education {
+  color: #000000;
+  text-align: justified;
+  font-family: var(--body-font-family, "Ubuntu-Regular", sans-serif);
+  font-size: var(--body-font-size, 25px);
+  font-weight: var(--body-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 }
 .footer {
   background: #050505;
