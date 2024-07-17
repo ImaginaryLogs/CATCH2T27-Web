@@ -17,7 +17,7 @@ body {
     align-self: stretch;
     flex-shrink: 0;
 }
-._00-p-home {
+.link-page-home {
     border-radius: 99px;
     padding: 0px 16px 0px 16px;
     display: flex;
@@ -46,7 +46,7 @@ body {
   flex: 1;
   position: relative;
 }
-._01-p-archives {
+.link-page-archives {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -56,7 +56,7 @@ body {
   width: 150px;
   position: relative;
 }
-.calendar {
+.navbar_link {
   color: #777777;
   text-align: center;
   font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
@@ -74,7 +74,7 @@ body {
   position: relative;
   overflow: visible;
 }
-._04-p-links {
+.link-page-pertinent-links {
   padding: 0px 16px 0px 16px;
   display: flex;
   flex-direction: column;
@@ -103,7 +103,7 @@ body {
   position: relative;
   overflow: visible;
 }
-._03-p-calendar {
+.link-page-calendar {
   padding: 0px 16px 0px 16px;
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@ body {
   position: relative;
   overflow: visible;
 }
-._05-p-about-us {
+.link-page-about-us {
   padding: 0px 16px 0px 16px;
   display: flex;
   flex-direction: column;
