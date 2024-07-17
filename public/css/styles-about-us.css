@@ -29,6 +29,15 @@ menu, ol, ul {
   position: relative;
   overflow: hidden;
 }
+@keyframes pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 .navbar {
   background: #ffffff;
   padding: 8px 36px 9px 36px;
@@ -209,15 +218,33 @@ menu, ol, ul {
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
+  
+}
+.hero-cover{
+  background: url(../images/hero0.png);
+  background-size: 10%;
+  background-repeat: repeat;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  animation: pan 180s linear infinite;
+  will-change: background-position;
 }
 .frame-16 {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 50px;
   align-items: flex-end;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  flex: 1;
+  flex: 1, 2;
   min-width: 300px;
   position: relative;
 }
@@ -270,10 +297,13 @@ menu, ol, ul {
   justify-content: center;
 }
 .logo-main-2 {
-  flex: 1;
-  height: 699px;
   position: relative;
-  object-fit:fill;
+  width:500px; 
+  height: 500px;
+  align-self:center;
+  justify-content: center;
+  align-items: center;
+  display:inline;
 }
 .frame-22 {
   background: #ffffff;
