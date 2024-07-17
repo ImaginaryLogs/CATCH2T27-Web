@@ -47,15 +47,17 @@ body {
   position: relative;
 }
 .link-page-archives {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 150px;
-  position: relative;
-}
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 150px;
+    position: relative;
+    text-decoration: none;
+    }
 .navbar_link {
   color: #777777;
   text-align: center;
@@ -66,6 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .icon-boxes {
   flex-shrink: 0;
@@ -78,12 +81,13 @@ body {
   padding: 0px 16px 0px 16px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   width: 150px;
   position: relative;
+  text-decoration: none;
 }
 .pertinent-links {
   color: #777777;
@@ -113,6 +117,7 @@ body {
   flex-shrink: 0;
   width: 150px;
   position: relative;
+  text-decoration: none;
 }
 .icon-calendar {
   flex-shrink: 0;
@@ -131,17 +136,7 @@ body {
   flex-shrink: 0;
   width: 150px;
   position: relative;
-}
-.about-us2 {
-  color: #777777;
-  text-align: center;
-  font-family: var(--navbar-title-font-family, "Ubuntu-Bold", sans-serif);
-  font-size: var(--navbar-title-font-size, 20px);
-  font-weight: var(--navbar-title-font-weight, 700);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-decoration: none;
 }
 .icon-info {
   flex-shrink: 0;
