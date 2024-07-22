@@ -221,7 +221,7 @@ menu, ol, ul {
   
 }
 .hero-cover{
-  background: url(https://catch2t27.com/images/hero0.png);
+  background: url(../images/hero0.png);
   background-size: 10%;
   background-repeat: repeat;
   flex: 1;

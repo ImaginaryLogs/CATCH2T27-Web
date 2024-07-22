@@ -75,7 +75,7 @@ body {
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
-  background: url(https://catch2t27.com/images/hero0.png) top left;
+  background: url(../images/hero0.png) top left;
   background-size: 10%;
   background-repeat: repeat;
   animation: pan 180s linear infinite;
