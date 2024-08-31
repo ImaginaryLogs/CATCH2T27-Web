@@ -13,6 +13,11 @@ export default {
         "black": "#0F1315",
       }
     },
+    fontFamily: {
+      'head': ['Ubuntu Bold', 'sans-serif'],
+      'subtitle': ['Ubuntu Italics', 'sans-serif'],
+      'body': ['Ubuntu', 'sans-serif'],
+    },
   },
   plugins: [],
 }
