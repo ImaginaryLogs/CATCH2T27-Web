@@ -1,9 +1,0 @@
-{
-	"/": [
-		"src/routes/+page.ts"
-	],
-	"/aboutus": [],
-	"/archivespage": [],
-	"/calendar": [],
-	"/pertinentlinks": []
-}
