@@ -5,7 +5,12 @@
 
 <script>
   import Announcement from "$components/Announcement.svelte";
+  import CommunityLinkHub from "./CommunityLinkHub.svelte";
 </script>
+
+<div id="community-link-hub" class="p-5">
+  <CommunityLinkHub></CommunityLinkHub>
+</div>
 
 <Announcement
   title="CATCH2T27"
@@ -13,3 +18,10 @@
   img={"/images/CATCH2T27_small.png"}
   buttonLink="https://www.youtube.com/watch?v=xvFZjo5PgG0"
 />
+
+<style>
+  #community-link-hub {
+    background: url("images/stripeBackground.png") left top repeat;
+    background-size: 50px;
+  }
+</style>
