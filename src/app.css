@@ -24,7 +24,7 @@
         font-family: 'Ubuntu Bold Italic';
         font-weight: 700;
         font-style: italic;
-        src: url('fonts/Ubuntu-Bold-Italic.ttf') format('truetype');
+        src: url('fonts/Ubuntu-BoldItalic.ttf') format('truetype');
     }
 
     @font-face {
