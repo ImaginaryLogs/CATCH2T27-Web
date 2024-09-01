@@ -21,8 +21,6 @@
 
         <div id="aboutus-details" class="flex flex-auto flex-col">
             
-            
-            
             <div id="aboutus" class="flex flex-auto pt-16">
                 <p id="aboutus-body" class="font-body text-base">
                     Computer Batch 2027 (CATCH2T27) is the representative body of ID123 <br>undergraduate students 
@@ -32,7 +30,7 @@
             
             <div id="mission-component" class="flex flex-auto flex-row space-x-2 space-y-2">
                 <div id="mission-image">
-                    <img src="images/aboutus/mission.png" alt="missionimg" class="size-16">
+                    <img src="images/aboutus/mission-10.png" alt="missionimg" class="size-16">
                 </div>
                 <div id="mission-text">
                     <p id ="mission-head" class="font-subtitle font-bold text-lg">Mission:</p>
@@ -46,7 +44,7 @@
             
             <div id="vision-component" class="flex flex-auto flex-row space-x-2 space-y-2">
                 <div id="vision-image">
-                    <img src="images/aboutus/vision.png" alt="visionimg" class="size-16">
+                    <img src="images/aboutus/vision-10.png" alt="visionimg" class="size-16">
                 </div>
                 <div id="vision-text">
 
