@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   // IDK why my intellisense formatting the array like this
   // deal with it 🔥🔥🔥
   const socials = [
