@@ -10,8 +10,8 @@
     <div id="data-component" class="flex flex-auto flex-row justify-end space-x-10">
         <a href="/pertinentlinks" id="pertinentlinks">
         <div id="pertinentlinks-component" class="flex flex-auto flex-col items-center">
-            <p>News</p>
-            <img src="/images/icon-newspaper0.svg" alt="infoimg" class="size-8"/>
+            <p class="font-head">News</p>
+            <img src="/images/nav/icon-newspaper0.svg" alt="infoimg" class="size-8"/>
         </div>
 
 
@@ -19,8 +19,8 @@
 
         <a href="/archivespage" id="archivespage">
             <div id="archivespage-component" class="flex flex-auto flex-col items-center">
-                <p>Archives</p>
-                <img src="/images/icon-boxes0.svg" alt="archivesimg" class="size-8"
+                <p class="font-head">Archives</p>
+                <img src="/images/nav/icon-boxes0.svg" alt="archivesimg" class="size-8"
                 />
             </div>
 
@@ -28,16 +28,16 @@
 
         <a href="/calendar" id="calendar">
             <div id="calendar-component" class="flex flex-col items-center">
-                <p class="font">Calendar</p>
-                <img src="/images/icon-calendar0.svg" alt="calendarimg" class="size-8"/>
+                <p class="font-head">Calendar</p>
+                <img src="/images/nav/icon-calendar0.svg" alt="calendarimg" class="size-8"/>
             </div>
         </a>
 
         
         <a href="/aboutus" id="aboutus">
             <div id="aboutus-component" class="flex flex-col items-center">
-                <p class="font-mono font-bold">About Us</p>
-                <img src="/images/icon-info0.svg" alt="aboutusimg" class="size-8"/>
+                <p class="font-head">About Us</p>
+                <img src="/images/nav/icon-info0.svg" alt="aboutusimg" class="size-8"/>
             </div>
         </a>
     </div>

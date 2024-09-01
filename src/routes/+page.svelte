@@ -4,7 +4,9 @@
 -->
     
 <script>
+  import Navbar from "$components/navbar.svelte";
+
 
 </script>
 
-<h1 class="size-1">Hello CATCH2T27!</h1>
+<Navbar/>
