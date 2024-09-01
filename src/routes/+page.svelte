@@ -6,7 +6,18 @@
 <script>
   import Announcement from "$components/Announcement.svelte";
   import CommunityLinkHub from "./CommunityLinkHub.svelte";
+  import Hero from "$components/hero.svelte"
 </script>
+
+
+<Hero 
+    introTitle={"De La Salle University\nCollege of Computer Studies\nID123 Batch Student Government"}
+    welcomeTitle={"Welcome to\nCATCH2T27"}
+    eventTitle="Hero Title" 
+    eventDescription ="In publishing and graphic design, Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/) is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design."
+    eventImgSrc="https://placehold.co/150"
+/>
+<!--  -->
 
 <div id="community-link-hub" class="p-5">
   <CommunityLinkHub></CommunityLinkHub>
@@ -24,4 +35,5 @@
     background: url("images/stripeBackground.png") left top repeat;
     background-size: 50px;
   }
+  
 </style>
