@@ -42,7 +42,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   /* Footer container */
 
   div.footer {
