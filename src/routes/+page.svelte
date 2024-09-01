@@ -5,11 +5,7 @@
 
 <script>
   import Announcement from "$components/Announcement.svelte";
-  import Footer from "$components/Footer.svelte";
-  import Navbar from "$components/Navbar.svelte";
 </script>
-
-<Navbar />
 
 <Announcement
   title="CATCH2T27"
@@ -17,4 +13,3 @@
   img={"/images/CATCH2T27_small.png"}
   buttonLink="https://www.youtube.com/watch?v=xvFZjo5PgG0"
 />
-<Footer />
