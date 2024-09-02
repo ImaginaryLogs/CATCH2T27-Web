@@ -17,7 +17,8 @@ export default {
     },
     fontFamily: {
       'head': ['Ubuntu Bold', 'sans-serif'],
-      'subtitle': ['Ubuntu Italics', 'sans-serif'],
+      'subhead': ['Ubuntu Medium', 'sans-serif'],
+      'subtitle': ['Ubuntu Italic', 'sans-serif'],
       'subtitle-bold': ['Ubuntu Bold Italic', 'sans-serif'],
       'body': ['Ubuntu', 'sans-serif'],
     },
