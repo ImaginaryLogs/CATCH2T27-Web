@@ -1,5 +1,6 @@
 <script>
   import Banner from "./Banner.svelte";
+  import GeneralAssembly from "./GeneralAssembly.svelte";
   import InfoVisionMission from "./InfoVisionMission.svelte";
 </script>
 
@@ -8,4 +9,5 @@
     For now, it should just contain general information of the organization.
 -->
 <Banner />
+<GeneralAssembly></GeneralAssembly>
 <InfoVisionMission />
