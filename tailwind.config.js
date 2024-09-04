@@ -38,9 +38,9 @@ export default {
       }
     },
     animation: {
-      'pan-right': 'pan_right 180s linear infinite',
-      'pan-down-right': 'pan_down_right 180s linear infinite',
-      'pan-left': 'pan_left 180s linear infinite'
+      'pan-right': 'pan_right 60s linear infinite',
+      'pan-down-right': 'pan_down_right 60s linear infinite',
+      'pan-left': 'pan_left 60s linear infinite'
     },
    
   },

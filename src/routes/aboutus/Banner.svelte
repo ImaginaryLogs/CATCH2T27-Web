@@ -1,16 +1,22 @@
 <div class="banner">
-  <div class="banner-text">
-    <div class="banner-subtitle">
-      <h3>Sparking Curiosity.</h3>
-      <h3>Inspiring Innovation.</h3>
-      <h3>Empowering Students.</h3>
+  <div class="banner-stars">
+    <div class="banner-text">
+      <div class="banner-subtitle">
+        <h3>Sparking Curiosity.</h3>
+        <h3>Inspiring Innovation.</h3>
+        <h3>Empowering Students.</h3>
+      </div>
+      <div class="banner-title">
+        <h1>Catch2T27</h1>
+        <h2>Batch Student Government for CCS123</h2>
+      </div>
     </div>
-    <div class="banner-title">
-      <h1>Catch2T27</h1>
-      <h2>Batch Student Government for CCS123</h2>
-    </div>
+    <img
+      src="/images/logo-main-20.png"
+      alt="catch2t27logo"
+      class="banner-logo"
+    />
   </div>
-  <img src="/images/logo-main-20.png" alt="catch2t27logo" class="banner-logo" />
 </div>
 
 <style>
@@ -23,9 +29,9 @@
   }
 
   .banner {
-    /* 72px came from the navbar measurement */
-    @apply relative bg-cover bg-center h-[calc(100vh-72px)] flex flex-col items-center justify-center text-white;
-    @apply sm:justify-between sm:items-stretch sm:flex-row;
+    /* 64px came from the navbar measurement */
+    @apply h-[calc(100vh-64px)] flex flex-col items-center justify-center text-white;
+    @apply md:flex-row md:justify-between md:items-stretch;
 
     background: linear-gradient(
       245.94deg,
@@ -34,6 +40,16 @@
       #723671 66%,
       #958d8d 110%
     );
+  }
+
+  .banner-stars {
+    /* 64px came from the navbar measurement */
+    @apply w-full h-full flex flex-col items-center justify-center text-white 
+    bg-repeat animate-pan-down-right;
+    @apply md:flex-row md:justify-between md:items-stretch;
+
+    background-image: url("images/hero0.png");
+    background-size: 10rem; 
   }
 
   .banner-text {
@@ -45,6 +61,6 @@
   }
 
   .banner-logo {
-    @apply self-center object-contain max-w-64 md:max-w-none max-h-svh;
+    @apply self-center object-contain h-1/2 md:h-auto md:max-w-none md:max-h-full;
   }
 </style>
