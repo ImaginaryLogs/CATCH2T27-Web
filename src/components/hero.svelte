@@ -19,7 +19,7 @@
     >
         <div class="p-20 flex flex-col gap-20 items-start justify-center self-stretch flex-shrink-0 relative overflow-hidden" >
             <div 
-                class="flex flex-row items-center flex-wrap self-stretch flex-1 min-w-720 relative overflow-hidden {center_event}"
+                class="flex flex-row items-center flex-wrap self-stretch flex-1 min-w-720 relative {center_event}"
             >
                 <div class="p-10 items flex flex-col gap-10 items-start justify-items-start flex-shrink-0 relative">
                     <div class="text-white text-left text-2xl flex-col font-head font-normal relative flex justify-items-start">
