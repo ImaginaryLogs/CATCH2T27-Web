@@ -23,7 +23,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="w-8 h-8" src={"images/" + img} alt={name} />
+          <img class="size-8" src={"images/" + img} alt={name} />
           <span>{name}</span>
         </a>
       {/each}

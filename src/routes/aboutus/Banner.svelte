@@ -29,10 +29,6 @@
   }
 
   .banner {
-    /* 64px came from the navbar measurement */
-    @apply h-[calc(100vh-64px)] flex flex-col items-center justify-center text-white;
-    @apply md:flex-row md:justify-between md:items-stretch;
-
     background: linear-gradient(
       245.94deg,
       #050441 -1.5%,
@@ -44,12 +40,11 @@
 
   .banner-stars {
     /* 64px came from the navbar measurement */
-    @apply w-full h-full flex flex-col items-center justify-center text-white 
-    bg-repeat animate-pan-down-right;
+    @apply flex flex-col items-center justify-center w-full h-[calc(100vh-64px)] overflow-hidden text-white bg-repeat animate-pan-down-right;
     @apply md:flex-row md:justify-between md:items-stretch;
 
     background-image: url("images/hero0.png");
-    background-size: 10rem; 
+    background-size: 10rem;
   }
 
   .banner-text {
