@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import "../app.css";
 
   import Footer from "$components/footer.svelte";
@@ -6,5 +6,7 @@
 </script>
 
 <Navbar />
-<slot />
+<main class="pt-16">
+  <slot />
+</main>
 <Footer />
