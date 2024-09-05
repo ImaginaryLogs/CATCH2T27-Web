@@ -73,7 +73,7 @@
 
 <style>
   #nav-bar {
-    @apply flex flex-row items-stretch justify-between md:flex-row fixed left-0 top-0 w-full bg-white;
+    @apply flex flex-row items-stretch justify-between md:flex-row fixed left-0 top-0 w-full bg-white z-50;
   }
 
   #data-component {
