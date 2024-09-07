@@ -3,5 +3,4 @@ export interface PertinentLink {
     title: string,
     link: string,
     body: string,
-
 }
