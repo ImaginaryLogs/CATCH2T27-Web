@@ -54,7 +54,7 @@
   }
 
   #mission-vision {
-    @apply flex flex-row items-start gap-6 p-6 rounded-lg md:flex-col mission-vision-text bg-purple;
+    @apply flex flex-row items-start gap-6 p-6 rounded-lg md:flex-col bg-purple;
   }
 
   h1 {
@@ -63,9 +63,5 @@
 
   p {
     @apply font-body;
-  }
-
-  .mission-vision-text > * {
-    @apply w-1/3 md:w-full;
   }
 </style>
