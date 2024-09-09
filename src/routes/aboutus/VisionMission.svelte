@@ -2,6 +2,7 @@
   export let title: string; // Required
   export let img: string = "";
   export let bodyText: string;
+  
 
   $: titleLowerCase = title.toLocaleLowerCase();
 </script>

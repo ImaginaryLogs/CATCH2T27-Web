@@ -3,12 +3,30 @@
     It contains details for all of the events from both the official DLSU calendar and the Important Student-led events.
 -->
 <script lang="ts">
-    export let special_events;
+    export let special_events: {};
+    import DayDropdown from './DayDropdown.svelte';
+    
 
-    interface calendarEvent {
+    // Helper functions
+    interface calendarPageEvent {
         order: number;
         date: Date;
-        events: {}
+        isCurrentMonth: boolean;
+        events: String[];
+    }
+
+    interface calendarEvent {
+        date: Date;
+        events: String[];
+    }
+
+    const createEventList = (date: Date, isCurrentMonth: boolean = false) => {
+        return {
+            "order" : date.getDay(),
+            "date" :  date,
+            "isCurrentMonth": isCurrentMonth,
+            "events": []
+        } as calendarPageEvent
     }
 
     const getLastDay = (date: Date) => {
@@ -29,18 +47,19 @@
         return date;
     }
 
-    const createEventList = (date: Date) => {
-        return {
-            "order" : date.getDay(),
-            "date" :  date,
-            "events": {}
-        } as calendarEvent
+
+    const createEventCurrrentMonth = (date: Date) =>{
+        return createEventList(date, true);
     }
-    
 
     const dateToday: Date = new Date();
-    //dateToday.setMonth(7)
-    const firstDayOfMonth = new Date(dateToday.getFullYear(), dateToday.getMonth(), 1);
+
+    const monthToday = dateToday.getMonth();
+
+    const yearToday = dateToday.getFullYear();
+
+    const firstDayOfMonth = new Date(yearToday, monthToday, 1);
+
     const lastDayOfMonth = getLastDay(dateToday);    
 
     const previousDaysFromFistDay = (prevDays: number) => {
@@ -51,46 +70,110 @@
         return getSkippedDayFromSetDate(lastDayOfMonth, nextDays);
     }
 
-    let monthPage: Array<Array<calendarEvent>> = Array.from(Array(6), ()=>Array(0));
+    const fillMissingInFirstWeek = (monthPage: Array<Array<calendarPageEvent>>) => {
+        if (hasMissingWeek(monthPage[0])) 
+            for (let i = 0; i < firstDayOfMonth.getDay(); i++){
+                monthPage[0].push(createEventList(previousDaysFromFistDay(i + 1)))
+            }
+    }
+
+    const fillMissingInLastWeek = (monthPage: Array<Array<calendarPageEvent>>) => {
+        const lastDayWeekIndex = monthPage
+            .findIndex((week)=>
+                week.some(event => event.date.getTime() === lastDayOfMonth.getTime())
+            )
+        
+        if (hasMissingWeek(monthPage[lastDayWeekIndex])) {
+
+            for (let i = 0; i < 6 - lastDayOfMonth.getDay(); i++){
+                let e = nextDaysFromLastDay(i + 1);
+                monthPage[lastDayWeekIndex].push(createEventList(e))
+            }
+        }
+    }
+
+    const hasMissingWeek = (arr: Array<calendarPageEvent>) => {
+        return arr.length < 7;
+    }
+ 
+    let monthPage: Array<Array<calendarPageEvent>> = Array.from(Array(6), ()=>Array(0));
 
     let datesInCurrentMonth = [...Array(getLastDay(dateToday).getDate()).keys()]
-        .map(n => n + 1)
         .map(createDateObjFromInt)
-        .map(createEventList)
+        .map(createEventCurrrentMonth)
 
     datesInCurrentMonth.forEach((el, i)=>{
         monthPage[getWeekOrderFromDate(el.date)].push(el);
     })
 
     
-    const hasMissingFirstDays: boolean = monthPage[0].length < 7;
-    if (hasMissingFirstDays) {
-        for (let i = 0; i < firstDayOfMonth.getDay(); i++){
-            monthPage[0].push(createEventList(previousDaysFromFistDay(i + 1)))
-        }
-    }
-
-    const lastDayWeekIndex = monthPage.findIndex((week)=>
-        week.some(event => event.date.getTime() === lastDayOfMonth.getTime())
-    ) 
-    const hasMissingLastDays: boolean = monthPage[lastDayWeekIndex].length < 7;
+    fillMissingInFirstWeek(monthPage)
     
-    if (hasMissingLastDays) {
-        for (let i = 0; i < 6 - lastDayOfMonth.getDay(); i++){
-            let e = nextDaysFromLastDay(i + 1);
-            monthPage[lastDayWeekIndex].push(createEventList(e))
+    fillMissingInLastWeek(monthPage);
+    
+    const exampleDate1: Date = new Date(); 
+    exampleDate1.setDate(6);
+
+    let events: Array<calendarEvent> = [
+        {
+            date: exampleDate1,
+            events: [
+                "Pasokan (Finally)"
+            ]
+        }, {
+            date: dateToday,
+            events: [
+                "Calendar Page's Birthday"
+            ] 
         }
-    }
+    ]
+
+    events.forEach((event)=>{
+       monthPage.forEach(week => {
+            week.forEach(
+                day => {
+                    if (day.date.toDateString() === event.date.toDateString())
+                        day.events.push(...event.events);
+                }
+            )
+       })
+    })
 
 
-    console.log(monthPage);
+    $: strDays = [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+    ]
+
 </script>
 
-{#each monthPage as weekPage}
-    {#each weekPage as dayPage}
-        <p>{dayPage.date.toDateString()}</p>
-    {/each}
-    <br />
-{/each}
-
+<div class="bg-dark-purple justify-center flex">
+    <div class="p-5 rounded-md flex flex-col items-center gap-5 bg-white flex-shrink-0 m-5 relative">
+        <h1 class="text-5xl text-center font-head">{dateToday.toLocaleString('default', {month: 'long'})}</h1>
+        <h2 class="text-3xl text-center font-subhead">{yearToday}</h2>
+        <div class="justify-center relative ">
+            <div class="grid grid-cols-7 gap-1 p-5">
+                {#each strDays as strDay}
+                    <li class="list-none text-center m-0 p-0 text-3xl text-purple font-subhead">{strDay}</li>
+                {/each}
+    
+                {#each monthPage as weekPage}
+                    {#each weekPage as dayPage}
+                        <DayDropdown
+                            date = {dayPage.date}
+                            isCurrentMonth = {dayPage.isCurrentMonth}
+                            isToday = {dayPage.date.toDateString() === dateToday.toDateString()}
+                            events = {dayPage.events}
+                        />
+                    {/each}
+                {/each}
+            </div>
+        </div>
+    </div>
+</div>
 <p></p>
