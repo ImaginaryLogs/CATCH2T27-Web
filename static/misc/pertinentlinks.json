@@ -1,0 +1,22 @@
+[
+    {
+        "title": "My.LaSalle Portal",
+        "body": "Access your student portal here.",
+        "link": "https://my.dlsu.edu.ph/"
+    },
+    {
+        "title": "Animo.sys",
+        "body": "For enlistment and pre-enlistment purposes.",
+        "link": "https://animo.sys.dlsu.edu.ph/"
+    },
+    {
+        "title": "AnimoSpace",
+        "body": "Canvas LMS for DLSU",
+        "link": "https://dlsu.instructure.com/"
+    },
+    {
+        "title": "USG LASALLIAN KIT",
+        "body": "Directory of different resources and processes in DLSU.",
+        "link": "https://linktr.ee/USGLasallianKit"
+    }
+]
