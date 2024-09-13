@@ -40,5 +40,8 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"firebase-admin": "^12.5.0"
+	}
 }
