@@ -1,4 +1,3 @@
-// import { initializeApp } from "firebase-admin/app"; // TODO: install firebase-admin to repo
 import admin from "firebase-admin";
 
 import { GOOGLE_APPLICATION_CREDENTIALS } from "$env/static/private";
