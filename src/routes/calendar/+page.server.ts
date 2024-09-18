@@ -1,6 +1,7 @@
 import { app } from "$lib/server/firebase.js";
 // TODO: check if it really is supposed to be .js extension?
 // i don't think that is normal but not having .js extension causes error
+// best to use .js
 
 import { error } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types.js";
