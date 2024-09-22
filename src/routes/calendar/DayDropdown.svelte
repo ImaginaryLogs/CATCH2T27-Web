@@ -15,7 +15,7 @@
       <div class="text-3xl">
         {date.getDate()}
       </div>
-      <div class="flex">
+      <div class="flex-row flex max-w-56">
         <ul>
           {#each events as event}
             <li class="text-wrap text-left text">

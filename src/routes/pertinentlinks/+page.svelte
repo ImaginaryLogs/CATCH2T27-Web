@@ -8,7 +8,7 @@
   const date_updated: string = "Sept 22, 2024";
 
 </script>
-<div id="links-background-component" class="flex flex-col bg-dark-purple w-full h-full min-h-screen">
+<div id="links-background-component" class="flex flex-col bg-dark-purple w-full h-full min-h-screen p-5">
     <p class="text-white text-4xl font-head self-center mt-4">Pertinent Links</p>
     <p class="text-white font-xl self-center">Updated as of {date_updated}</p>
     <br>
