@@ -1,6 +1,7 @@
 <script>
-const warning_size = 150;
-const svg_style = "fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+    const body_text = "This site is currently under construction. \nServices will go back soon, so stay tuned for updates!";
+    const warning_size = 150;
+    const svg_style = "fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 </script>
 
 <div class=" bg-yellow-700 flex flex-col gap-0 justify-items-start items-start self-stretch min-h-lvh">
@@ -11,9 +12,9 @@ const svg_style = "fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin
 		<div class="justify-center relative flex flex-col gap-5 self-stretch p-10" >
 			<div class=" bg-white justify-center gap-5 flex flex-row-reverse p-5 min-h-96 min-w-96 rounded-xl">
 				<div class = "justify-center flex flex-col">
-                    <h1 class="text-3xl font-bold">We are building to CATCH UP!</h1>
+                    <h1 class="text-4xl font-bold">Coming soon! We are building to CATCH UP!</h1>
                     <br />
-                    <h2>This site is currently in a work in progress. Services will go back soon, so CATCH you later!</h2>
+                    <pre class="text-3xl">{body_text}</pre>
                 </div>
                 
                 <div class="justify-center flex flex-col">
