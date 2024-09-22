@@ -1,13 +1,89 @@
 [
     {
-        "title":"Title",
-        "body":"Body",
-        "link":"Hyperlink"
-    },
-    
-    {
-        "title":"Title2",
-        "body":"Body2",
-        "link":"Link2"
+        "title" : "General ID123",
+        "body" : "",
+        "link_set" : [
+            {
+                "title": "MLS Portal",
+                "body":"My La Salle Portal",
+                "link": "https://my.dlsu.edu.ph"
+            }, {
+                "title": "Animo.sys",
+                "body":"Animo System",
+                "link": "https://animo.sys.dlsu.edu.ph"
+            }, {
+                "title": "Services around DLSU",
+                "body": "",
+                "link": "https://www.facebook.com/dlsu.usg/posts/"
+            }, {
+                "title": "USG LASALLIAN KIT",
+                "body": "",
+                "link": "https://linktr.ee/USGLasallianKit"
+            }, {
+                "title": "USG General Concerns form",
+                "body": "",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSenC-1Qemh-KATYSy4u14G58YCTBV2ZwgpMW1fku5XY8EWXKw/viewform"
+            }, {
+                "title": "CSG General Concerns Form",
+                "body": "",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSf31Q9PzsdQOXvVXeVdNpguRroIc4oGyoM4gslFLgf8_OKZZQ/viewform"
+            }, {
+                "title": "Shuttle Service",
+                "body": "For anyone who needs to travel to the Laguna Campus",
+                "link": "https://www.facebook.com/dlsu.usg/posts/pfbid0QvgzVUkwmrPd4TNvdHqiNvEvWvBdV1EzdPFiox5GzDL5vmbSkSPowPDGzKaqb5Enl"
+            }, {
+                "title": "Request for Good Morals",
+                "body": "",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSdFmzf_8-UN141Umm117qhwiWXA4ZugN0gY3KwYwH-oyalLCg/closedform"
+            }, {
+                "title": "Shifting Application for CCS",
+                "body": "",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLScOyOK8U8AyIzVng6cNeHJY-BR_qPBHl6CpkSsJ04r20BTCBA/viewform?fbclid=IwZXh0bgNhZW0CMTAAAR2_bOOKbGreKmJuuECgt-p6wW7eMXrduvpp8UbjSpYOgE5mMNnoiCdkxyI_aem_su2rKgpT5kedQQf0jy9h1g"
+            }
+        ]
+    }, {
+        "title": "Undergraduate Student Concerns",
+        "body" : "",
+        "link_set": [
+            {
+                "title": "Enrollment Schedule and Procedures",
+                "body" : "",
+                "link" : "https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/enroll_ug.pdf"
+            }, {
+                "title": "Request for Documents",
+                "body" : "",
+                "link" : "https://www.dlsu.edu.ph/offices/registrar/document_request/"
+            }, {
+                "title": "Course Crediting",
+                "body" : "",
+                "link" : "https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/application-for-course-crediting.pdf"
+            }, {
+                "title": "Shifting Application",
+                "body" : "",
+                "link" : "https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/shifting_ug.pdf"
+            }, {
+                "title": "Excused Absence Requests",
+                "body" : "The Associate Deans process ONLY requests for approved absence due to medical and mental health reasons.",
+                "link" : "https://bit.ly//CCSExcusedAbsence"
+            }
+        ]
+    }, {
+        "title": "Graduate",
+        "body" : "",
+        "link_set" : [ 
+            {
+                "title": "Enrollment Schedule and Procedures",
+                "body" : "",
+                "link" : "https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/enroll_gs.pdf"
+            }, {
+                "title": "Request for Documents",
+                "body" : "",
+                "link" : "https://www.dlsu.edu.ph/offices/registrar/document_request/"
+            }, {
+                "title": "Shifting Application",
+                "body" : "",
+                "link" : "https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/shifting_gs.pdf"
+            }
+        ]
     }
 ]
