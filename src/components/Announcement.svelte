@@ -10,7 +10,7 @@
 </script>
 
 <div
-  class="flex flex-col-reverse items-center justify-center gap-12 p-12 bg-white md:flex-row"
+  class="flex flex-col-reverse items-center justify-center gap-12 p-12 bg-white md:flex-row min-h-screen"
 >
   <div class="flex flex-col items-center gap-4 md:max-w-screen-md">
     <h1 class="w-full text-4xl text-center font-head md:text-left">{title}</h1>

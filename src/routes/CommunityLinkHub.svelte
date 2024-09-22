@@ -1,4 +1,4 @@
-<div class="flex flex-col font-body gap-3">
+<div class="flex flex-col font-body gap-3 min-h-screen">
   <h2 class="text-4xl font-bold">Community Link Hub</h2>
   <p class="text-2xl">
     Organizations and other ID123s churn out useful articles for you to use

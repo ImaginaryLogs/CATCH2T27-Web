@@ -9,5 +9,5 @@
     For now, it should just contain general information of the organization.
 -->
 <Banner />
-<GeneralAssembly></GeneralAssembly>
+<GeneralAssembly />
 <InfoVisionMission />
