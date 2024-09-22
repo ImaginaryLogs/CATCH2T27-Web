@@ -2,7 +2,7 @@
     export let introTitle: string;
     export let welcomeTitle: string;
     export let eventTitle: string = "";
-    export let eventDescription: string = "";
+    export let eventDescription: string = "Good Morning CCS ID123!\nWelcome to the CATCH2T27 Website - the place of every info you need. Take a look at what's happening down below!";
     export let eventImgSrc: string = "";
 
     $: eventTitleUpperCase = eventTitle.toUpperCase();
@@ -12,9 +12,12 @@
 </script>
 
 
-<div class="flex flex-col gap-0 items-start justify-items-start self-stretch flex-shrink-0 relative overflow-hidden bg-dark-purple">
+<div 
+    class="flex flex-col gap-0 items-start justify-items-start self-stretch flex-shrink-0 relative overflow-hidden bg-dark-purple h-svh"
+    id="bg-custom-grad"
+>
     <div
-        class="flex flex-col gap-0 items-start justify-center self-stretch flex-shrink-0 relative overflow-hidden bg-repeat animate-pan-down-right"
+        class="flex flex-col gap-0 items-start justify-center self-stretch flex-shrink-0 relative overflow-hidden bg-repeat animate-pan-down-right h-svh"
         id="bg-scrolling-stars"
     >
         <div class="p-20 flex flex-col gap-20 items-start justify-center self-stretch flex-shrink-0 relative overflow-hidden" >
@@ -70,5 +73,9 @@
         background-size: 10%;
     }
 
+    #bg-custom-grad{
+        background: rgb(32,13,50);
+        background: linear-gradient(180deg, rgba(32,13,50,1) 18%, rgba(66,9,74,1) 86%);
+    }
     
 </style>

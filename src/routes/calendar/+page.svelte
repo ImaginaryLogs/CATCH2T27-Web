@@ -147,9 +147,7 @@
 </script>
 
 <div class="bg-dark-purple justify-center flex">
-  <div
-    class="p-5 rounded-md flex flex-col items-center gap-5 bg-white flex-shrink-0 m-5 relative"
-  >
+  <div class="p-5 rounded-md flex flex-col items-center gap-5 bg-white flex-shrink-0 m-5 relative">
     <h1 class="text-5xl text-center font-head">
       {dateToday.toLocaleString("default", { month: "long" })}
     </h1>
@@ -157,9 +155,7 @@
     <div class="justify-center relative">
       <div class="grid grid-cols-7 gap-1 p-5">
         {#each strDays as strDay}
-          <li
-            class="list-none text-center m-0 p-0 text-3xl text-purple font-subhead"
-          >
+          <li class="list-none text-center m-0 p-0 text-3xl text-purple font-subhead">
             {strDay}
           </li>
         {/each}
