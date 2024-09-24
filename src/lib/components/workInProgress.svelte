@@ -41,7 +41,7 @@
 
 <style>
     #bg-scrolling-stars {
-        background: url("images/stripeBG.png");
+        background: url("$lib/assets/images/stripeBG.png");
         background-size: 20%;
 	}
 </style>

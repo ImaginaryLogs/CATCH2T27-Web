@@ -1,6 +1,9 @@
 {
 	"name": "catch2t27-web",
 	"version": "0.0.1",
+	"engines": {
+		"node": "20"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -42,6 +45,10 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
-		"firebase-admin": "^12.5.0"
+		"@sveltejs/adapter-static": "^3.0.5",
+		"@sveltejs/kit": "^2.5.28",
+		"firebase-admin": "^12.5.0",
+		"firebase-tools": "^13.19.0",
+		"svelte-adapter-firebase": "^0.15.0"
 	}
 }

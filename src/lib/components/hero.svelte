@@ -69,7 +69,7 @@
 
 <style>
     #bg-scrolling-stars {
-        background: url("images/hero0.png");
+        background: url("$lib/assets/images/hero0.png");
         background-size: 10%;
     }
 

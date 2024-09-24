@@ -1,11 +1,11 @@
 <script lang="ts">
   import "../app.css";
 
-  import Footer from "$components/footer.svelte";
-  import Navbar from "$components/navbar.svelte";
-  import WIPNotice from "$components/workInProgress.svelte";
-
-  const is_work_in_progress = false;
+  import Footer from "$lib/components/footer.svelte";
+  import Navbar from "$lib/components/navbar.svelte";
+  import WIPNotice from "$lib/components/workInProgress.svelte";
+  export const prerender = true
+  const is_work_in_progress = true;
 </script>
 
 <Navbar />

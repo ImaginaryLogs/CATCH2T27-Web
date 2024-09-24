@@ -4,9 +4,9 @@
 -->
 
 <script>
-  import Announcement from "$components/Announcement.svelte";
+  import Announcement from "$lib/components/Announcement.svelte";
   import CommunityLinkHub from "./CommunityLinkHub.svelte";
-  import Hero from "$components/hero.svelte"
+  import Hero from "$lib/components/hero.svelte"
 </script>
 
 
@@ -25,13 +25,13 @@
 <Announcement
   title="CATCH2T27"
   bodyText={"CATCH 2T27 is dedicated to stimulating curiosity, encouraging innovation, and enabling CCS 123 students to excel in coding and computer education. By fostering a love for continuous learning and development, CATCH 2T27 aims to equip students with the capabilities to lead and succeed in the ever-changing landscape of technology."}
-  img="/images/CATCH2T27_small.jpg"
+  img="$lib/assets/images/CATCH2T27_small.jpg"
   buttonLink="https://www.youtube.com/watch?v=xvFZjo5PgG0"
 />
 
 <style>
   #community-link-hub {
-    background: url("images/stripeBackground.png") left top repeat;
+    background: url("$lib/assets/images/stripeBackground.png") left top repeat;
     background-size: 50px;
   }
   

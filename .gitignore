@@ -9,6 +9,8 @@ lerna-debug.log*
 
 node_modules
 dist
+build
+build/*
 dist-ssr
 *.local
 .env
@@ -29,3 +31,5 @@ dist-ssr
 
 # Firebase
 firebase-credentials.json
+firebase
+.firebase

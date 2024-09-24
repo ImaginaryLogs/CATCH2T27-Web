@@ -43,7 +43,7 @@
     @apply flex flex-col items-center justify-center w-full h-[calc(100vh-64px)] overflow-hidden text-white bg-repeat animate-pan-down-right;
     @apply md:flex-row md:justify-between md:items-stretch;
 
-    background-image: url("images/hero0.png");
+    background-image: url("$lib/assets/images/hero0.png");
     background-size: 10rem;
   }
 
