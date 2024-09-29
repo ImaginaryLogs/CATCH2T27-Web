@@ -10,11 +10,11 @@
 		id="bg-scrolling-stars"
 	>
 		<div class="justify-center relative flex flex-col gap-5 self-stretch p-10" >
-			<div class=" bg-white justify-center gap-5 flex flex-row-reverse p-5 min-h-96 min-w-96 rounded-xl">
+			<div class=" bg-white justify-center self-center gap-5 flex flex-row-reverse p-5 min-h-96 min-w-96 rounded-xl">
 				<div class = "justify-center flex flex-col">
-                    <h1 class="text-4xl font-bold">Coming soon! We are building to CATCH UP!</h1>
+                    <h1 class="md:text-4xl font-bold text-xl text-wrap">Coming soon! We are building to CATCH UP!</h1>
                     <br />
-                    <pre class="text-3xl">{body_text}</pre>
+                    <pre class="md:text-3xl text-base text-wrap">{body_text}</pre>
                 </div>
                 
                 <div class="justify-center flex flex-col">
