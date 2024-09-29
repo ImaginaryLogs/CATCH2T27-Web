@@ -1,74 +1,182 @@
-<div class="flex flex-col font-body gap-3 min-h-screen">
-  <h2 class="text-4xl font-bold">Community Link Hub</h2>
-  <p class="text-2xl">
-    Organizations and other ID123s churn out useful articles for you to use
-  </p>
-  <div class="flex flex-col ml-8 gap-3">
-    <h3 class="font-bold text-4xl">Organizations:</h3>
-    <!-- NOTE: Could possibly turn into a component, can be easily done via Svelte extension -->
-    <div class="flex flex-row gap-2">
-      <!-- Logo -->
-      <img
-        src="https://placehold.co/150"
-        alt="CATCH2T27 Logo"
-        class="h-[150px]"
-      />
-      <div class="flex flex-col gap-1">
-        <h4 class="text-4xl font-bold">CATCH2T27 Links:</h4>
-        <p class="text-2xl">Remember to do your PHEX and Drug-testing</p>
-        <div class="flex flex-row gap-10 justify-around ml-5">
-          <!-- copied from navbar -->
-          <a href="/pertinentlinks" id="pertinentlinks">
-            <div
-              id="pertinentlinks-component"
-              class="flex flex-auto flex-col items-center"
-            >
-              <p class="font-head">News</p>
-              <img
-                src="/images/nav/icon-newspaper0.svg"
-                alt="infoimg"
-                class="size-8"
-              />
-            </div>
-          </a>
+<script>
+  import Carousel from "svelte-carousel";
 
-          <a href="/archivespage" id="archivespage">
-            <div
-              id="archivespage-component"
-              class="flex flex-auto flex-col items-center"
-            >
-              <p class="font-head">Archives</p>
-              <img
-                src="/images/nav/icon-boxes0.svg"
-                alt="archivesimg"
-                class="size-8"
-              />
-            </div>
-          </a>
+  const links = [
+      {
+          link: "https://www.roymerreviewers.com/",
+          logo: "images/communitylinkhub/RoymerReviews.png",
+          title: "Roymer Reviewers",
+          description: "A collection of reviewers",
+      },
+      {
+          link: "https://github.com/zelkim/pretzel",
+          // logo: "images/communitylinkhub/Pretzel.png",
+          title: "Pretzel",
+          description:
+              "Pretzel is a Discord bot that ports the My.LaSalle course offerings page into a Discord bot, offering seamless class selection integration within Discord servers",
+      },
+      {
+          link: "https://a.berde.co/",
+          // logo: "images/communitylinkhub/Berde.png",
+          title: "Archer API",
+          description: "Lasallian data: by Lasallians, for Lasallians",
+      },
+      {
+          link: "https://dlsupts.vercel.app/",
+          logo: "images/communitylinkhub/PTS.png",
+          title: "Peer Tutor Society",
+          description:
+              "Have a challenging subject or two this term? Don't worry, Peer Tutors Society is here to help you with your academic needs!",
+      },
+  ];
 
-          <a href="/calendar" id="calendar">
-            <div id="calendar-component" class="flex flex-col items-center">
-              <p class="font-head">Calendar</p>
-              <img
-                src="/images/nav/icon-calendar0.svg"
-                alt="calendarimg"
-                class="size-8"
-              />
-            </div>
-          </a>
+  const multipleLinks = [
+      {
+          title: "University Student Government",
+          logo: "images/communitylinkhub/USG.jpg",
+          links: [
+              {
+                  title: "Website",
+                  link: "https://dlsuusg.com/",
+              },
+              {
+                  title: "Facebook",
+                  link: "https://www.facebook.com/dlsu.usg/",
+              },
+              {
+                  title: "Instagram",
+                  link: "https://www.instagram.com/usg_dlsu/",
+              },
+              {
+                  title: "Twitter",
+                  link: "https://x.com/usg_dlsu",
+              },
+              {
+                  title: "Telegram",
+                  link: "https://t.me/usg_dlsu",
+              },
+          ],
+      },
+      {
+          title: "Computer Studies Government",
+          logo: "images/communitylinkhub/CSG.jpg",
+          links: [
+              {
+                  title: "ONECCS Website",
+                  link: "https://oneccshub.com/",
+              },
+              {
+                  title: "Facebook",
+                  link: "https://www.facebook.com/DLSU.CSG/",
+              },
+              {
+                  title: "Instagram",
+                  link: "https://www.instagram.com/dlsu_csg/",
+              },
+              {
+                  title: "Twitter",
+                  link: "https://x.com/dlsucsg",
+              },
+              {
+                  title: "LinkedIn",
+                  link: "https://www.linkedin.com/company/computer-studies-government-de-la-salle-university",
+              },
+              {
+                  title: "Email",
+                  link: "mailto:usgccs@dlsu.edu.ph",
+              },
+          ],
+      },
+      {
+          title: "Laguna Campus Student Government",
+          logo: "images/communitylinkhub/LCSG.jpg",
+          links: [
+              {
+                  title: "Facebook",
+                  link: "https://www.facebook.com/LCSGDLSU/",
+              },
+              {
+                  title: "Instagram",
+                  link: "https://www.instagram.com/stcgovernment/",
+              },
+              {
+                  title: "Twitter",
+                  link: "https://x.com/stcg_dlsu",
+              },
+              {
+                  title: "Email",
+                  link: "mailto:lcsg@dlsu.edu.ph",
+              },
+          ],
+      },
+  ];
+</script>
 
-          <a href="/aboutus" id="aboutus">
-            <div id="aboutus-component" class="flex flex-col items-center">
-              <p class="font-head">About Us</p>
-              <img
-                src="/images/nav/icon-info0.svg"
-                alt="aboutusimg"
-                class="size-8"
-              />
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+<div class="flex flex-col items-center justify-center gap-4 p-4">
+  <h1 class="text-4xl font-head">Community Link Hub</h1>
+  <h2 class="text-2xl font-subtitle">Organizations and other ID123s churn out useful stuff for you to you use</h2>
+  <div class="w-full bg-gray-200 md:w-3/4 rounded-3xl">
+      <Carousel>
+          {#each links as { link, logo, title, description }}
+              <a
+                  class="flex flex-col items-center w-full p-4 md:flex-row md:max-h-96"
+                  href={link}
+                  target="_blank"
+              >
+                  {#if logo}
+                      <img
+                          src={logo}
+                          alt={title}
+                          class="object-contain size-36"
+                      />
+                  {/if}
+                  <div class="flex flex-col gap-4 p-4">
+                      <h1 class="text-4xl font-head">{title}</h1>
+                      <p>{description}</p>
+                  </div>
+              </a>
+          {/each}
+          {#each multipleLinks as { title, links, logo }}
+              <div
+                  class="flex flex-col items-center w-1/2 p-4 md:flex-row md:max-h-96"
+              >
+                  <img
+                      src={logo}
+                      alt={title}
+                      class="object-contain size-36"
+                  />
+                  <div class="flex flex-col w-full gap-4 p-4">
+                      <h1 class="text-4xl font-head">{title}</h1>
+                      <div class="grid grid-cols-4 gap-4 w-fit">
+                          {#each links as { title, link }}
+                              <div class="flex flex-row items-center">
+                                  <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke-width="1.5"
+                                      stroke="currentColor"
+                                      class="block w-4 h-auto min-w-4 max-w-4"
+                                  >
+                                      <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                      />
+                                  </svg>
+                                  <a
+                                      href={link}
+                                      target="_blank"
+                                      class="font-bold text-dark-purple hover:text-purple hover:underline"
+                                  >
+                                      {title}
+                                  </a>
+                              </div>
+                          {/each}
+                      </div>
+                  </div>
+              </div>
+          {/each}
+      </Carousel>
   </div>
 </div>
