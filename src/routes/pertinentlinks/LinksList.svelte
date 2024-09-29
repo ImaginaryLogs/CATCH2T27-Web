@@ -4,7 +4,6 @@
     import Link from "./link.svelte";
     import LinkModule from "./link_module.svelte";
     let promise:Promise<PertinentModule[]> = getModules();
-
     async function getLinks():Promise<PertinentLink[]> {
         const res = await getPertinentLinks();
         if(!res) return [{
@@ -19,11 +18,11 @@
         const res = await getPertinentModules();
         if(!res) return [{
             title:"Not Found",
-            body:"This is a body",
+            body:"Find the JSON file",
             link_set:[
                 {
                     title: "Not found",
-                    body: "body",
+                    body: "Example body",
                     link: "This is a link"
                 }
             ],

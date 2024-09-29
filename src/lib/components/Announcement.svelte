@@ -1,12 +1,14 @@
 <script lang="ts">
   export let title: string; // Required
   export let bodyText: string = ""; // by default there is no body text
-  export let img: string = ""; // by default there is no photo
+  export let imgLink: string = ""; // by default there is no photo
   export let buttonLink: string = "#"; // by default the button does nothing
   export let buttonText: string = "Learn More"; // we can also customize the text in the button
 
   // conditional classes here
-  $: hasImg = img !== "" && img !== undefined;
+  $: hasImg = imgLink !== "" && imgLink !== undefined;
+  //Fetches the JSON data from sample.json
+  
 </script>
 
 <div
@@ -18,7 +20,7 @@
     {#if hasImg}
       <img
         class="block object-contain max-h-48 md:hidden"
-        src={img}
+        src={imgLink}
         alt={title}
       />
     {/if}
@@ -47,7 +49,7 @@
   {#if hasImg}
     <img
       class="hidden object-contain max-h-64 max-w-1/3 md:block"
-      src={img}
+      src={imgLink}
       alt={title}
     />
   {/if}

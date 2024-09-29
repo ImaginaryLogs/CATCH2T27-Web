@@ -5,8 +5,10 @@
 
 <script>
   import Announcement from "$lib/components/Announcement.svelte";
+  import Hero from "$lib/components/hero.svelte";
   import CommunityLinkHub from "./CommunityLinkHub.svelte";
-  import Hero from "$lib/components/hero.svelte"
+
+  const hero_link = "src/lib/assets/images/CATCH2T27_small.jpg";
 </script>
 
 
@@ -25,7 +27,7 @@
 <Announcement
   title="CATCH2T27"
   bodyText={"CATCH 2T27 is dedicated to stimulating curiosity, encouraging innovation, and enabling CCS 123 students to excel in coding and computer education. By fostering a love for continuous learning and development, CATCH 2T27 aims to equip students with the capabilities to lead and succeed in the ever-changing landscape of technology."}
-  img="$lib/assets/images/CATCH2T27_small.jpg"
+  imgLink={hero_link}
   buttonLink="https://www.youtube.com/watch?v=xvFZjo5PgG0"
 />
 

@@ -1,9 +1,10 @@
 import type { PertinentLink, PertinentModule } from "./interfaces.js";
 
+const json_link = "src/lib/assets/json/sample.json";
 
 //Fetches the JSON data from sample.json
 export const getPertinentLinks = async():Promise<PertinentLink[]|null> => {
-    const data:Promise<PertinentLink[]> = await fetch('links/sample.json').then(
+    const data:Promise<PertinentLink[]> = await fetch(json_link).then(
         (value) => {
             return value.json();
         }
@@ -17,7 +18,7 @@ export const getPertinentLinks = async():Promise<PertinentLink[]|null> => {
 }
 
 export const getPertinentModules = async():Promise<PertinentModule[]|null> => {
-    const data:Promise<PertinentModule[]> = await fetch('links/sample.json').then(
+    const data:Promise<PertinentModule[]> = await fetch(json_link).then(
         (value) => {
             return value.json();
         }

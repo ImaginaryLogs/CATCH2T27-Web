@@ -146,32 +146,31 @@
   const strDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 </script>
 
-<div class="bg-dark-purple justify-center flex">
-  <div class="p-5 rounded-md flex flex-col items-center gap-5 bg-white flex-shrink-0 m-5 relative">
+<div class="bg-dark-purple justify-center min-w-full p-1">
+  <div class="p-5 rounded-md flex flex-col items-center gap-5 bg-white m-5">
     <h1 class="text-5xl text-center font-head">
       {dateToday.toLocaleString("default", { month: "long" })}
     </h1>
     <h2 class="text-3xl text-center font-subhead">{yearToday}</h2>
-    <div class="justify-center relative">
-      <div class="grid grid-cols-7 gap-1 p-5">
-        {#each strDays as strDay}
-          <li class="list-none text-center m-0 p-0 text-3xl text-purple font-subhead">
-            {strDay}
-          </li>
-        {/each}
+    <div class="grid grid-cols-7 overflow-auto gap-1 min-h-screen ">
+      {#each strDays as strDay}
+        <li class="list-none text-center m-0 p-0 text-xl text-purple font-subhead">
+          {strDay}
+        </li>
+      {/each}
 
-        {#each monthPage as weekPage}
-          {#each weekPage as dayPage}
-            <DayDropdown
-              date={dayPage.date}
-              isCurrentMonth={dayPage.isCurrentMonth}
-              isToday={dayPage.date.toDateString() === dateToday.toDateString()}
-              events={dayPage.events}
-            />
-          {/each}
+      {#each monthPage as weekPage}
+        {#each weekPage as dayPage}
+          <DayDropdown
+            date={dayPage.date}
+            isCurrentMonth={dayPage.isCurrentMonth}
+            isToday={dayPage.date.toDateString() === dateToday.toDateString()}
+            events={dayPage.events}
+          />
         {/each}
-      </div>
+      {/each}
     </div>
+
   </div>
 </div>
 <p></p>
