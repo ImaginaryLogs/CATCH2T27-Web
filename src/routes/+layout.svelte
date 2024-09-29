@@ -5,7 +5,7 @@
   import Navbar from "$lib/components/navbar.svelte";
   import WIPNotice from "$lib/components/workInProgress.svelte";
   export const prerender = true
-  const is_work_in_progress = true;
+  const is_work_in_progress = false;
 </script>
 
 <Navbar />

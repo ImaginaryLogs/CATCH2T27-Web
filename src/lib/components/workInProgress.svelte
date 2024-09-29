@@ -4,14 +4,14 @@
     const svg_style = "fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 </script>
 
-<div class=" bg-yellow-700 flex flex-col gap-0 justify-items-start items-start self-stretch min-h-lvh">
+<div class=" bg-yellow-700 flex flex-col gap-0 justify-items-start items-start min-h-lvh w-full">
 	<div 
-		class="flex flex-col gap-0 items-start justify-center self-stretch flex-shrink-0 relative bg-repeat animate-pan-down-right  min-h-lvh"
+		class="flex flex-col gap-0 items-start justify-center flex-shrink-0 relative bg-repeat animate-pan-down-right  min-h-lvh"
 		id="bg-scrolling-stars"
 	>
 		<div class="justify-center relative flex flex-col gap-5 self-stretch p-10" >
-			<div class=" bg-white justify-center gap-5 flex flex-row-reverse p-5 min-h-96 min-w-96 rounded-xl">
-				<div class = "justify-center flex flex-col">
+			<div class=" bg-white justify-center gap-5 flex flex-row-reverse p-5 min-h-96 rounded-xl">
+				<div class = "justify-center flex flex-col flex-warp">
                     <h1 class="text-4xl font-bold">Coming soon! We are building to CATCH UP!</h1>
                     <br />
                     <pre class="text-3xl">{body_text}</pre>

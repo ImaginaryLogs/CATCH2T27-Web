@@ -48,7 +48,6 @@
 		"@sveltejs/adapter-static": "^3.0.5",
 		"@sveltejs/kit": "^2.5.28",
 		"firebase-admin": "^12.5.0",
-		"firebase-tools": "^13.19.0",
-		"svelte-adapter-firebase": "^0.15.0"
+		"firebase-tools": "^1.2.0"
 	}
 }

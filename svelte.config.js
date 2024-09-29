@@ -1,7 +1,6 @@
 //import adapter from "@sveltejs/adapter-auto";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import adapter from '@sveltejs/adapter-static';
-import firebase from "svelte-adapter-firebase";
 import { resolve } from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */

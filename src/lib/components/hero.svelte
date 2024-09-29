@@ -13,7 +13,7 @@
 
 
 <div 
-    class="flex flex-col gap-0 items-start justify-items-start self-stretch flex-shrink-0 relative overflow-hidden bg-dark-purple h-svh"
+    class="flex flex-col gap-0 items-start justify-items-start self-stretch w-full flex-shrink-0 relative overflow-hidden bg-dark-purple h-svh"
     id="bg-custom-grad"
 >
     <div

@@ -14,7 +14,7 @@ export const load: PageServerLoad = async () => {
   const currentMonth = new Date(now.getFullYear(), now.getMonth(), 1);
   const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
 
-  const data = await app
+  const data =  await app
     .firestore()
     .collection("calendar")
     .where("date", ">", currentMonth)
