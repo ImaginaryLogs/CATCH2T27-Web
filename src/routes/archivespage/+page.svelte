@@ -2,6 +2,9 @@
     Archives
     Should contain any past content that we published.
 -->
+<script>
+    import logo_address from "$lib/assets/images/LOGO-main.png"
+</script>
 
 <div class=" bg-dark-purple min-w-full w-full min-h-screen">   
     <div class="bg-repeat overflow-hidden bg1 w-full min-h-screen animate-pan-down-right">
@@ -9,7 +12,7 @@
             <div class="flex justify-center p-5 flex-col w-full min-h-screen">
                 <div class="bg-white  m-5 p-5 rounded-xl max-w-screen-sm">
                     <h1 class="text-black text-3xl font-bold">You've reached the end of the archives...</h1>
-                <img src="src/lib/assets/images/LOGO-main.png" alt="Nothing" class="max-w-32">
+                <img src={logo_address} alt="Nothing" class="max-w-32">
                 <p>Catch you later!</p>    
                 </div>
             

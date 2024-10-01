@@ -1,5 +1,8 @@
 <script>
   import VisionMission from "./VisionMission.svelte";
+  import mission_png from "$lib/assets/images/aboutus/mission.png";
+  import vision_png from "$lib/assets/images/aboutus/vision.png";
+  import logo_png from "$lib/assets/images/aboutus/white-20.png";
 </script>
 
 <!--
@@ -11,7 +14,7 @@
   <div id="whoweare" class="">
     <h1>Who we are</h1>
     <img
-      src="/images/aboutus/white-20.png"
+      src={logo_png}
       alt="catch2t27logo"
       class="self-center"
     />
@@ -28,13 +31,13 @@
     <div id="mission-vision">
       <VisionMission
         title="Mission"
-        img="images/aboutus/mission.png"
+        img={mission_png}
         bodyText="To ignite curiosity, inspire innovation, and empower CCS 123 students to excel in coding and computer education. Fostering a passion for lifelong learning in the dynamic realm of technology"
       />
 
       <VisionMission
         title="Vision"
-        img="images/aboutus/vision.png"
+        img={vision_png}
         bodyText="A batch that persistently innovates through curiosity and passion for computer education"
       />
     </div>

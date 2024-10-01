@@ -8,7 +8,7 @@
   import Hero from "$lib/components/hero.svelte";
   import CommunityLinkHub from "./CommunityLinkHub.svelte";
 
-  const hero_link = "src/lib/assets/images/CATCH2T27_small.jpg";
+  import hero_link from "$lib/assets/images/CATCH2T27_small.jpg";
 </script>
 
 

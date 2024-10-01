@@ -1,5 +1,5 @@
 <script>
-  const logo = "src/lib/assets/images/LOGO-main.png"
+  import logo from "$lib/assets/images/LOGO-main.png"
 </script>
 
 <div class="banner">
