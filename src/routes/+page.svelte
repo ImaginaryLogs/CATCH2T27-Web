@@ -15,8 +15,9 @@
 <Hero 
     introTitle={"De La Salle University\nCollege of Computer Studies\nID123 Batch Student Government"}
     welcomeTitle={"Welcome to\nCATCH2T27"}
+    
     eventTitle="Welcome ID123" 
-    eventImgSrc="https://placehold.co/250"
+    eventImgSrc={hero_link}
 />
 <!--  -->
 

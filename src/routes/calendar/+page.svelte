@@ -6,7 +6,7 @@
   import type { PageData } from "./$types.js";
   export let data: PageData;
 
-  console.log(data);
+  console.log(data, typeof(data));
 
   import DayDropdown from "./DayDropdown.svelte";
 
@@ -77,7 +77,7 @@
   ) => {
     if (hasMissingWeek(monthPage[0]))
       for (let i = 0; i < firstDayOfMonth.getDay(); i++) {
-        monthPage[0].push(createEventList(previousDaysFromFistDay(i + 1)));
+        monthPage[0].unshift(createEventList(previousDaysFromFistDay(i + 1)));
       }
   };
 
@@ -100,14 +100,17 @@
     return arr.length < 7;
   };
 
+  // Create an empty array
   let monthPage: Array<Array<calendarPageEvent>> = Array.from(Array(6), () =>
     Array(0)
   );
 
+  // Fill it in with dates
   let datesInCurrentMonth = [...Array(getLastDay(dateToday).getDate()).keys()]
     .map(createDateObjFromInt)
     .map(createEventCurrrentMonth);
 
+  // Sort each day by corresponding week
   datesInCurrentMonth.forEach((el, i) => {
     monthPage[getWeekOrderFromDate(el.date)].push(el);
   });
@@ -115,9 +118,6 @@
   fillMissingInFirstWeek(monthPage);
 
   fillMissingInLastWeek(monthPage);
-
-  const exampleDate1: Date = new Date();
-  exampleDate1.setDate(6);
 
   let events: Array<calendarEvent> = [];
 
@@ -147,12 +147,13 @@
 </script>
 
 <div class="bg-dark-purple justify-center min-w-full p-1">
-  <div class="p-5 rounded-md flex flex-col items-center gap-5 bg-white m-5">
+  <div class="p-5 rounded-md items-center bg-white m-5 overflow-hidden">
     <h1 class="text-5xl text-center font-head">
       {dateToday.toLocaleString("default", { month: "long" })}
     </h1>
     <h2 class="text-3xl text-center font-subhead">{yearToday}</h2>
-    <div class="grid grid-cols-7 overflow-auto gap-1 min-h-screen ">
+    <div class="grid grid-cols-7 min-h-0 min-w-96 gap-1 overflow-scroll">
+
       {#each strDays as strDay}
         <li class="list-none text-center m-0 p-0 text-xl text-purple font-subhead">
           {strDay}
@@ -161,12 +162,14 @@
 
       {#each monthPage as weekPage}
         {#each weekPage as dayPage}
-          <DayDropdown
-            date={dayPage.date}
-            isCurrentMonth={dayPage.isCurrentMonth}
-            isToday={dayPage.date.toDateString() === dateToday.toDateString()}
-            events={dayPage.events}
-          />
+
+            <DayDropdown
+              date={dayPage.date}
+              isCurrentMonth={dayPage.isCurrentMonth}
+              isToday={dayPage.date.toDateString() === dateToday.toDateString()}
+              events={dayPage.events}
+            />
+
         {/each}
       {/each}
     </div>

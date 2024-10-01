@@ -1,0 +1,34 @@
+
+  
+  {
+    "calendar_events": [
+      {
+        "event": "Start of Classes for Term 1, Academic Year 2024-2025",
+        "date": "2024-09-01T16:00:00.025Z"
+      },
+      {
+        "event": "Deadline: Special Class Enrollment at 8:00 PM",
+        "date": "2024-09-03T16:00:00.927Z"
+      },
+      {
+        "event": "Deadline: Dropping of courses with 90% refund",
+        "date": "2024-09-06T16:00:00.710Z"
+      },
+      {
+        "event": "Deadline: Audit Class Enrollment at 8:00 PM",
+        "date": "2024-09-13T16:00:00.450Z"
+      },
+      {
+        "event": "Start of Online Pre-enlistment for Term 2 Academic Year 2024-2025",
+        "date": "2024-09-23T00:00:00.402Z"
+      },
+      {
+        "event": "End of Online Pre-enlistment for Term 2 Academic Year 2024-2025",
+        "date": "2024-09-25T12:00:00.971Z"
+      },
+      {
+        "event": "Deadline: Dropping of courses with No Refund",
+        "date": "2024-09-27T16:00:00.062Z"
+      }
+    ]
+  }

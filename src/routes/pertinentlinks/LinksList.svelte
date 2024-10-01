@@ -1,22 +1,13 @@
 <script lang="ts">
     import type { PertinentLink, PertinentModule } from "./interfaces.js";
-    import { getPertinentLinks, getPertinentModules } from "./load_json.js";
+    import data from "$lib/assets/data/sample.json"
     import Link from "./link.svelte";
     import LinkModule from "./link_module.svelte";
     let promise:Promise<PertinentModule[]> = getModules();
-    async function getLinks():Promise<PertinentLink[]> {
-        const res = await getPertinentLinks();
-        if(!res) return [{
-            title:"Not Found",
-            body:"This is a body",
-            link:"This is a link",
-        }]
-        else return res;
-    }
 
     async function getModules():Promise<PertinentModule[]> {
-        const res = await getPertinentModules();
-        if(!res) return [{
+
+        if(!data) return [{
             title:"Not Found",
             body:"Find the JSON file",
             link_set:[
@@ -27,7 +18,7 @@
                 }
             ],
         }]
-        else return res;
+        else return data;
     }
 
 
