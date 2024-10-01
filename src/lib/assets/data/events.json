@@ -29,6 +29,10 @@
       {
         "event": "Deadline: Dropping of courses with No Refund",
         "date": "2024-09-27T16:00:00.062Z"
+      },
+      {
+        "event": "",
+        "date": "2024-10-01T15:00:00.000Z" 
       }
     ]
   }

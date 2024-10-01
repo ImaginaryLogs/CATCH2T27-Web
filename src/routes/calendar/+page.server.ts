@@ -5,32 +5,27 @@ import { app } from "$lib/server/firebase.js";
 
 import { error } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types.js";
-
+import data from '$lib/assets/data/events.json' assert {type: 'json'}
 import type { Timestamp } from "firebase-admin/firestore";
 
-export const load: PageServerLoad = async () => {
-  const now = new Date();
+// export const load: PageServerLoad = async () => {
+//   const now = new Date();
 
-  const currentMonth = new Date(now.getFullYear(), now.getMonth(), 1);
-  const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+//   const currentMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+//   const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
 
-  const data = await app
-    .firestore()
-    .collection("calendar")
-    .where("date", ">", currentMonth)
-    .where("date", "<", nextMonth)
-    .get();
+//   const data = await app
+//     .firestore()
+//     .collection("calendar")
+//     .where("date", ">", currentMonth)
+//     .where("date", "<", nextMonth)
+//     .get();
 
-  const array = data.docs.map(
-    (doc) => doc.data() as { event: string; date: Timestamp }
-  );
+//   const array = data.docs.map(
+//     (doc) => doc.data() as { event: string; date: Timestamp }
+//   );
 
-  return {
-    calendar_events: array.map((doc) => {
-      return {
-        event: doc.event as string,
-        date: doc.date.toDate(),
-      };
-    }),
-  };
-};
+//   return {
+//     cal_events: data
+//   };
+// };

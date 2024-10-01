@@ -9,7 +9,7 @@
     $: dayToday = isToday ? "bg-light-purple" : "";
   </script>
 
-<div class= " {dayWithinMonth} {dayToday} outline-1 outline-gray-100 justify-center p-1 aspect-square min-h-32 overflow-hidden">
+<div class= " {dayWithinMonth} {dayToday} outline-1 outline-gray-100 justify-center p-1 aspect-square overflow-hidden">
 
     <div class="flex flex-col font-subhead ">
       <div class="text-sm">

@@ -3,12 +3,12 @@
   import { browser } from '$app/environment';
 
   const links = [
-      {
-          link: "https://www.roymerreviewers.com/",
-          logo: "images/communitylinkhub/RoymerReviews.png",
-          title: "Roymer Reviewers",
-          description: "A collection of reviewers",
-      },
+    //   {
+    //       link: "https://www.roymerreviewers.com/",
+    //       logo: "images/communitylinkhub/RoymerReviews.png",
+    //       title: "Roymer Reviewers",
+    //       description: "A collection of reviewers",
+    //   },
       {
           link: "https://github.com/zelkim/pretzel",
           // logo: "images/communitylinkhub/Pretzel.png",

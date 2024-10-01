@@ -1,3 +1,7 @@
+<script>
+  const logo = "src/lib/assets/images/LOGO-main.png"
+</script>
+
 <div class="banner">
   <div class="banner-stars">
     <div class="banner-text">
@@ -12,7 +16,7 @@
       </div>
     </div>
     <img
-      src="/images/logo-main-20.png"
+      src={logo}
       alt="catch2t27logo"
       class="banner-logo"
     />

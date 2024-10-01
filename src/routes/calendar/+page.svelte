@@ -4,11 +4,12 @@
 -->
 <script lang="ts">
   import type { PageData } from "./$types.js";
-  export let data: PageData;
+  import data from '$lib/assets/data/events.json';
 
   console.log(data, typeof(data));
 
   import DayDropdown from "./DayDropdown.svelte";
+	import { stringify } from "postcss";
 
   // Helper functions
   interface calendarPageEvent {
@@ -122,7 +123,7 @@
   let events: Array<calendarEvent> = [];
 
   for (const rawEvent of data.calendar_events) {
-    let arrayEntry = events.findIndex((event) => event.date === rawEvent.date);
+    let arrayEntry = events.findIndex((event) => JSON.stringify(event.date) === rawEvent.date);
 
     if (arrayEntry === -1)
       arrayEntry =
